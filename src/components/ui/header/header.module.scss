@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    align-items: center;    
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    background: green;
+
+    a {
+        color: white;
+        margin: 0 10px;
+
+        &.active {
+            color: pink;
+        }
+
+        &:hover {
+            color: pink;
+        }
+    }
+}
