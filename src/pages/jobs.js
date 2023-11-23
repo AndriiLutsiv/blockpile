@@ -29,7 +29,6 @@ async function fetchStaticContent() {
     };
 }
 
-
 export async function getStaticProps() {
     const postsRes = await fetch('http://hot-dang-homes-course.local/wp-json/wp/v2/posts?_fields=id,title,excerpt,categories');
     const posts = await postsRes.json();

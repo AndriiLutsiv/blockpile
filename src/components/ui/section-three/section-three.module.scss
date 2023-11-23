@@ -1,0 +1,33 @@
+.sectionThree {
+    background-color: #f6f4f1;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.rowThree {
+    display: flex;
+    gap: 40px;
+}
+
+.boxImg {
+    width: 800px;
+    height: 800px;
+    margin-left: -150px;
+}
+
+.boxContentThree {
+    padding-top: 180px;
+    .headingTitle {
+        font-size: 36px;
+        font-weight: normal;
+        margin-bottom: 55px;
+    }
+    .title {
+        font-family: "Montserrat-Variable";
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+}

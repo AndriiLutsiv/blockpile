@@ -1,0 +1,41 @@
+.sectionOne {
+    background-color: #ece9e3;
+}
+
+.sectionBox {
+    padding-top: 150px;
+    padding-bottom: 300px;
+    background-image: url(./images/box.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.heading3 {
+    text-transform: uppercase;
+    margin-bottom: 130px;
+}
+
+.heading1 {
+    font-size: 78px;
+    font-weight: normal;
+    max-width: 800px;
+    margin-bottom: 100px;
+}
+
+.arrow {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+    & img {
+        transition: transform 0.5s ease-in-out;
+    }
+    &:hover img {
+        transform: translateY(5px);
+    }
+}

@@ -1,0 +1,43 @@
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.web3Box{
+    display: flex;
+    
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+
+    .web3BoxHeading{
+        margin-bottom: 50px;
+        h2{ 
+            max-width: 820px;
+            font-weight: normal;
+            font-size: 48px;
+            margin: 0 auto;
+        }
+    }
+    
+    button {
+        display: block;
+        margin: 0 auto;
+        padding: 20px 55px;
+        font-size: 16px;
+        background-color: #ed4d15; 
+        color: #fff; 
+        border: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s ease; 
+      }
+    button:hover{
+        background-color: #f85013;
+    }
+
+
+}
+.boxContenttwo{
+    margin-bottom: 100px;
+}

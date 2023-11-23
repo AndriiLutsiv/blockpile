@@ -1,0 +1,36 @@
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.sectionBoxTwo {
+    background-color: #ece9e3;
+    padding-bottom: 200px;
+
+    & .heading3 {
+        text-transform: uppercase;
+        margin-bottom: 100px;
+    }
+}
+
+.rowTwo {
+    display: flex;
+    gap: 60px;
+}
+
+.coll3 {
+    .titleImg {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 40px;
+    }
+    .heading4 {
+        font-size: 36px;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    .title {
+        font-family: "Montserrat-Variable";
+        line-height: 1.4;
+    }
+}

@@ -1,0 +1,67 @@
+.slideBox {
+  padding: 10px 20px;
+  margin: 100px 0;
+}
+
+.titleSlider {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Montserrat-Variable";
+  line-height: 1.4;
+  position: relative;
+
+  span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ed4d15;
+    opacity: 0.5;
+  }
+}
+
+.titleSlider::before {
+  content: "“";
+  position: absolute;
+  top: -5px;
+  left: -15px;
+  font-family: "Montserrat-Variable";
+  font-weight: bold;
+  color: #ed4d15;
+  font-size: 24px;
+  z-index: -1;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+}
+
+.slideBoxI {
+  display: flex;
+  width: 250px;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  margin-top: 40px;
+
+  .slideImg {
+    width: 80px;
+    height: 80px;
+    background: black;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      background: white;
+      transform: rotate(45deg);
+    }
+  }
+
+  .slideHeading {
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+}
