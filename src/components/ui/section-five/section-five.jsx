@@ -1,7 +1,3 @@
-
-
-
-
 import React from 'react';
 import styles from './section-five.module.scss'
 import pict1 from './images/work1.jpg'
@@ -23,16 +19,16 @@ const SectionFive = () => {
       </div>
       <div className={styles.postsContainer}>
         <Post post={{
-          img: pict1,
-          category: 'DEFI',
+          featuredImage: pict1,
+          categoryNames: ['DEFI'],
           title: 'AirSwap',
-          text: 'Short descriptor here that can be one or two lines to give some insight before the jump.'
+          excerpt: 'Short descriptor here that can be one or two lines to give some insight before the jump.'
         }} />
         <Post post={{
-          img: pict2,
-          category: 'NFT',
+          featuredImage: pict2,
+          categoryNames: ['NFT'],
           title: 'BirdBlotter',
-          text: 'Short descriptor here that can be one or two lines to give some insight before the jump.'
+          excerpt: 'Short descriptor here that can be one or two lines to give some insight before the jump.'
         }} />
       </div>
     </div>
@@ -44,8 +40,8 @@ const SectionFive = () => {
             <Image
               src={pict3}
               alt="Image"
-              // width={615}
-              // height={437}
+              width={327}
+              height={192}
               layout="responsive"
             />
           </div>
@@ -56,8 +52,8 @@ const SectionFive = () => {
             <Image
               src={pict4}
               alt="Image"
-              // width={615}
-              // height={437}
+              width={327}
+              height={192}
               layout="responsive"
             />
           </div>
@@ -68,8 +64,8 @@ const SectionFive = () => {
             <Image
               src={pict5}
               alt="Image"
-              // width={615}
-              // height={437}
+              width={327}
+              height={192}
               layout="responsive"
             />
           </div>

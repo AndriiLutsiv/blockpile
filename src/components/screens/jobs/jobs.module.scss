@@ -1,3 +1,43 @@
 .jobs {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 16px;
+    background-color: #ece9e3;
+    background-image: url(./images/box.png);
+
+    .container {
+        max-width: 1170px;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 70px;
+        width: 100%;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    a {
+        margin: 0 5px;
+        padding: 5px 10px;
+        text-decoration: none;
+        border: 1px solid #ccc;
+        color: #333;
+
+        &:hover {
+            border-color: #0070f3;
+            color: #0070f3;
+        }
+
+        &.active {
+            border-color: #0070f3;
+            color: #0070f3;
+        }
+    }
 }

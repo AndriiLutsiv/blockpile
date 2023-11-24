@@ -4,18 +4,19 @@ import styles from './post.module.scss';
 
 const Post = ({ isSmall, post }) => {
   return <div className={styles.post}>
-    <div className={styles.imgContainer}>
-      <Image
-        src={post.img}
-        alt="Image"
-        width={615}
-        height={437}
-        layout="responsive"
-      />
+    <div className={classNames(styles.imgContainer, {[styles.smaller]: isSmall})}>
+      <div className={styles.imageWrapper}>
+        <Image
+          src={post.featuredImage}
+          alt="Image"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
     </div>
-    <div className={styles.category}>{post.category}</div>
-    <h2 className={styles.title}>{post.title}</h2>
-    <p className={styles.text}>{post.text}</p>
+    <div className={styles.category}>{post.categoryNames[0]}</div>
+    <h2 className={classNames(styles.title, {[styles.smaller]: isSmall})}>{post.title}</h2>
+    <p className={classNames(styles.text, {[styles.smaller]: isSmall})}>{post.excerpt}</p>
   </div>
 }
 

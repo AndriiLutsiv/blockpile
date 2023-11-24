@@ -3,21 +3,59 @@
     max-width: 615px;
 }
 .imgContainer {
+    position: relative;
+    width: 100%;
+    padding-top: 70%;
+    overflow: hidden;
     margin-bottom: 42px;
+
+    &.smaller {
+        margin-bottom: 21px;
+    }
+}
+
+.imageWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    & img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .category {
     height: 18px;
     text-transform: uppercase;
-    color: #ED4D16;
+    color: #ed4d16;
     margin-bottom: 20px;
 }
 
 .title {
     font-size: 32px;
     margin-bottom: 16px;
+
+    &.smaller {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 .text {
     font-size: 18px;
+
+    &.smaller {
+        overflow: hidden; 
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
 }

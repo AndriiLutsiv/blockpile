@@ -1,58 +1,57 @@
 import { Jobs } from "@/components/screens/jobs";
 import { parse } from 'node-html-parser';
 
-export default function JobsPage({ posts, categories, staticResult }) {
-    console.log('cat', categories);
-    console.log('processedPosts', posts);
-    console.log('static', staticResult);
-    return <Jobs /> 
+export default function JobsPage({ posts, categories, totalPages }) {
+    return <Jobs posts={posts} totalPages={totalPages} categories={categories} />
 }
 
-async function fetchStaticContent() {
-    const res = await fetch('http://hot-dang-homes-course.local/wp-json/wp/v2/pages/16');
-    const page = await res.json();
+export async function getServerSideProps({ query }) {
+    const page = parseInt(query.page) || 1;
+    const perPage = 6; // Number of posts per page
 
-    // Replace escaped newline and tab characters with actual HTML or whitespace
-    let contentHtml = page.content.rendered.replace(/\\n/g, '').replace(/\\t/g, '').trim();
-
-    // Use regular expressions to extract the text inside the paragraph (<p>) tags
-    const paragraphMatches = contentHtml.match(/<p>(.*?)<\/p>/g);
-    const paragraphText = paragraphMatches ? paragraphMatches.map(match => match.replace(/<p>|<\/p>/g, '')).join(' ') : '';
-
-    // Use regular expressions to extract the text inside the button or anchor (<button> or <a>) tags
-    const buttonMatches = contentHtml.match(/<button>(.*?)<\/button>/g);
-    const buttonText = buttonMatches ? buttonMatches.map(match => match.replace(/<button>|<\/button>/g, '')).join(' ') : '';
-
-    return {
-        paragraph: paragraphText,
-        button: buttonText
-    };
-}
-
-export async function getStaticProps() {
-    const postsRes = await fetch('http://hot-dang-homes-course.local/wp-json/wp/v2/posts?_fields=id,title,excerpt,categories');
+    // Fetch posts for the current page
+    const postsRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/posts?_embed&per_page=${perPage}&page=${page}`);
     const posts = await postsRes.json();
 
-    const categoriesRes = await fetch('http://hot-dang-homes-course.local/wp-json/wp/v2/categories?_fields=id,name');
+    // Get total number of posts to calculate total pages
+    const total = postsRes.headers.get('X-WP-Total');
+    const totalPages = Math.ceil(total / perPage);
+
+    // Fetch categories
+    const categoriesRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/categories?_fields=id,name`);
     const categories = await categoriesRes.json();
 
-    const staticResult = await fetchStaticContent();
+    const categoriesWithAllOption = [{ id: 0, name: 'All' }, ...categories];
 
-    const processedPosts = posts.map(post => ({
-        ...post,
-        title: post.title.rendered,
-        excerpt: post.excerpt.rendered.replace(/<\/?[^>]+(>|$)/g, ""),
-        categoryNames: post.categories.map(catId =>
-            categories.find(cat => cat.id === catId)?.name || ''
-        )
-    }));
+    // mapping of category IDs to category names for quick search
+    const categoryMap = categoriesWithAllOption.reduce((acc, category) => {
+        acc[category.id] = category.name;
+        return acc;
+    }, {});
+
+    const processedPosts = posts.map(post => {
+        // image src
+        const featuredMedia = post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'].length > 0
+            ? post._embedded['wp:featuredmedia'][0].source_url
+            : null;
+
+        // categories array
+        const categoryNames = post.categories.map(catId => categoryMap[catId] || '');
+
+        return {
+            id: post.id,
+            title: post.title.rendered,
+            excerpt: post.excerpt.rendered.replace(/<\/?[^>]+(>|$)/g, ""),
+            featuredImage: featuredMedia,
+            categoryNames: categoryNames,
+        };
+    });
 
     return {
         props: {
             posts: processedPosts,
-            categories: categories,
-            staticResult: staticResult
+            totalPages,
+            categories: categoryMap
         },
-        revalidate: 10,
     };
 }
