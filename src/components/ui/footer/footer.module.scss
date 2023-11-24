@@ -1,4 +1,45 @@
-.footer {
-    width: 100%;
-    background: grey;
+.sectionFooter {
+    padding: 125px 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.footerBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+// li {
+//     list-style: none;
+// }
+
+.logoRow {
+    display: flex;
+    gap: 110px;
+}
+
+.footerSearch {
+    display: flex;
+    gap: 35px;
+    ul li{
+        margin-bottom: 10px;
+        list-style: none;
+    }
+}
+.footerLogo{
+    height: 75px;
+    width: 75px;
+    img{
+        display: block;
+        width: 100%;
+    }
+}
+.privacy{
+    ul li{
+        margin-bottom: 10px;
+        list-style: none;
+    }
 }
