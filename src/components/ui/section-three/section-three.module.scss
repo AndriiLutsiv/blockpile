@@ -5,29 +5,63 @@
 .container {
     width: 1170px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .rowThree {
     display: flex;
     gap: 40px;
+    @media (max-width: 1169px) {
+      flex-direction: column;
+      max-width: 800px;
+      align-items: center
+    }
+    @media (max-width: 750px) {
+        flex-direction: column;
+        max-width: 800px;
+        align-items: flex-start;
+
+      }
 }
 
 .boxImg {
     width: 800px;
     height: 800px;
     margin-left: -150px;
+
+    @media (max-width: 1169px) {
+        width: 500px;
+        height: 500px;
+        margin-left: 5px;
+    }
 }
 
 .boxContentThree {
     padding-top: 180px;
+    @media (max-width: 750px) {
+        padding-top: 80px;
+        max-width: 400px;
+    }
+    @media (max-width: 1000px) {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
     .headingTitle {
         font-size: 36px;
         font-weight: normal;
         margin-bottom: 55px;
+        @media (max-width: 1169px) {
+            font-size: 28px;
+        }
     }
+
     .title {
         font-family: "Montserrat-Variable";
         margin-bottom: 20px;
         line-height: 1.2;
+        @media (max-width: 1169px) {
+            font-size: 22px;
+        }
     }
 }

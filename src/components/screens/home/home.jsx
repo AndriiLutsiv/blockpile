@@ -9,7 +9,7 @@ import { SectionFive } from '@/components/ui/section-five';
 const Home = () => {
 
     return <Layout title='Home' description='Some description for seo'>
-        <div className={styles.home}>Home</div>
+        {/* <div className={styles.home}>Home</div> */}
         <SectionOne />
         <SectionTwo />
         <SectionThree />

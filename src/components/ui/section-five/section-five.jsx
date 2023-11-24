@@ -8,8 +8,7 @@ import pict1 from './images/work1.jpg'
 import pict2 from './images/work2.jpg'
 import pict3 from './images/blog1.jpg'
 import pict4 from './images/blog2.jpg'
-import pict5 from './images/birdBlog3/birdLeft.jpg'
-import pict6 from './images/birdBlog3/birdRight.jpg'
+import pict5 from './images/birds.png'
 import { ContentWeb3 } from '../content-web3';
 import Link from "next/link";
 import { Post } from '../post';
@@ -55,26 +54,26 @@ const SectionFive = () => {
         <div className={styles.blogItem}>
           <div className={styles.imageContainer}>
             <Image
-              src={pict3}
+              src={pict4}
               alt="Image"
               // width={615}
               // height={437}
               layout="responsive"
             />
           </div>
-          <div className={styles.imageText}>Smart Contract 101</div>
+          <div className={styles.imageText}>Check out the latest launch</div>
         </div>
         <div className={styles.blogItem}>
           <div className={styles.imageContainer}>
             <Image
-              src={pict3}
+              src={pict5}
               alt="Image"
               // width={615}
               // height={437}
               layout="responsive"
             />
           </div>
-          <div className={styles.imageText}>Smart Contract 101</div>
+          <div className={styles.imageText}>Artist profile: SmokeStacks</div>
         </div>
       </div>
     </div>

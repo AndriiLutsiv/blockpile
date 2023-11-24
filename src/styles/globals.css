@@ -1,3 +1,12 @@
+
+@font-face {
+  font-family: 'Rubik-Regular';
+  src: url('./font/Rubik-VariableFont_wght.ttf') format('truetype');
+} 
+@font-face {
+  font-family: 'Montserrat-Variable';
+  src: url('./font/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -10,7 +19,7 @@
 body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  font-family: -apple-system, "HelveticaLight", Helvetica Neue, sans-serif;
+  font-family:  'Rubik-Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--bg-primary);
