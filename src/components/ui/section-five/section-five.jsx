@@ -17,10 +17,9 @@ import Image from 'next/image';
 
 const SectionFive = () => {
   return <div className={styles.sectionFive}>
-
     <div className={styles.contentTop}>
       <div className={styles.row}>
-        <h3 className={styles.title}>#f6f4f1</h3>
+        <h3 className={styles.title}>Featured Work</h3>
         <Link href={`/jobs`} className={styles.link}>View all &gt;</Link>
       </div>
       <div className={styles.postsContainer}>
@@ -37,7 +36,6 @@ const SectionFive = () => {
           text: 'Short descriptor here that can be one or two lines to give some insight before the jump.'
         }} />
       </div>
-      <div>lslal</div>
     </div>
     <div className={styles.contentBottom}>
       <h3 className={styles.title}>From the blog</h3>

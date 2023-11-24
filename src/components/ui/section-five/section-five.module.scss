@@ -4,6 +4,8 @@
 
 .contentTop {
     background: #f6f4f1;
+    padding-top: 150px;
+    height: 490px;
 }
 
 .row {
@@ -38,12 +40,12 @@
     align-items: center;
     border-bottom: 4px solid #ed4d16;
     padding-bottom: 81px;
-    margin: 0 auto 94px auto;
+    margin: 0 auto;
 }
 
 .contentBottom {
     background: #ece9e3;
-    padding-bottom: 187px;
+    padding: 450px 0 187px 0;
 
     & .title {
         width: 100%;
@@ -79,6 +81,8 @@
     width: 100%;
     background: #ece9e3;
 }
+
+
 
 // .sectionFive {
 //     position: relative;

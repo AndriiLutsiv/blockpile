@@ -4,7 +4,7 @@ import { Slider } from '../slider';
 
 const SectionFour = () => {
 
-  return <div className={styles.SectionFour}>
+  return <div className={styles.sectionFour}>
     <div className={styles.container}><Slider /></div>
   </div>
 }

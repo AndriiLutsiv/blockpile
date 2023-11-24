@@ -1,3 +1,6 @@
+.mySlider {
+}
+
 .slideBox {
   padding: 10px 20px;
   margin: 100px 0;
@@ -64,4 +67,20 @@
     font-weight: normal;
     text-transform: uppercase;
   }
+}
+
+.mySlider :global(.slick-dots li) {
+  background: white; // Global override for all dots
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+.mySlider :global(.slick-dots li.slick-active ) {
+  background: #ed4d15; // Global override for the active dot
+  border-radius: 50%;
+}
+
+.mySlider :global(.slick-dots li button ) {
+ opacity: 0;
 }
