@@ -8,7 +8,7 @@
     background-color: #ece9e3;
     background-image: url(./images/box.png);
 
-    .container {
+    .postsContainer {
         max-width: 1170px;
         display: grid;
         margin: 0 auto;
@@ -39,5 +39,23 @@
             border-color: #0070f3;
             color: #0070f3;
         }
+    }
+}
+
+.categoryButtons {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto 44px auto;
+}
+
+.categoryButton {
+    padding: 2px 5px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:not(:first-child) {
+        font-weight: 600;
     }
 }
