@@ -23,7 +23,13 @@
     max-width: 47%;
 }
 @media (max-width: 600px){
-  max-width: 57%;
+  max-width: 50%;
+}
+@media (max-width: 560px){
+  max-width: 40%;
+}
+@media (max-width: 460px){
+  max-width: 30%;
 }
 }
 

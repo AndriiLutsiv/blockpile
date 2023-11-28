@@ -1,43 +1,40 @@
-import Link from 'next/link';
+import { useState } from 'react';
 import Image from 'next/image';
-import logo1 from './images/Logo.png'
-import logo2 from './images/block.png'
+import logo from './images/logo.svg';
 import styles from './header.module.scss';
 import { useRouter } from 'next/router';
+import classNames from 'classnames';
 
 const Header = () => {
-    const { pathname } = useRouter();
+  const { pathname } = useRouter();
+  const [open, setOpen] = useState(false);
 
-    return <div className={styles.sectionHeader}>
-        <div className={styles.container}>
-            <div className={styles.boxHeader}>
-                <div className={styles.logo}>
-                    <Image
-                        src={logo1}
-                        alt="Image"
-                        // width={615}
-                        // height={437}
-                        layout="responsive"
-                    />
-                    <Image
-                        src={logo2}
-                        alt="Image"
-                        // width={615}
-                        // height={437}
-                        layout="responsive"
-                    />
-                </div>
-                <div className={styles.headerSearch}>
-                    <ul><li>About</li>
-                        <li>Case Studies</li>
-                        <li>Clients</li>
-                        <li>Contact</li>
-                    </ul>
-                    <div className={styles.headerButton}><button>Start Project</button></div>
-                </div>
-            </div>
+  const toggleMenu = () => {
+    setOpen(!open);
+  };
+
+  return (
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <div className={styles.logo}>
+          <Image src={logo} width={297} alt="logo" />
         </div>
-    </div>
-}
+        <div onClick={toggleMenu} className={classNames(styles.burger, { [styles.open]: open })}>
+          <div className={styles.bar} />
+        </div>
+        <div className={classNames(styles.headerItems, {[styles.open]: open})}>
+          <div className={styles.headerItem}>About</div>
+          <div className={styles.headerItem}>Case Studies</div>
+          <div className={styles.headerItem}>Clients</div>
+          <div className={styles.headerItem}>Contact</div>
+          <button className={styles.headerButton}>Start Project</button>
+          <div className={styles.cross} onClick={toggleMenu}/>
+        </div>
+      </div>
+      {open && <div className={styles.backdrop} onClick={toggleMenu}></div>}
+
+    </header>
+  );
+};
 
 export default Header;
