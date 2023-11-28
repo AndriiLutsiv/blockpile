@@ -4,6 +4,7 @@ import styles from './jobs.module.scss';
 import Layout from '@/components/layout/Layout';
 import Link from "next/link";
 import { useRouter } from 'next/router';
+import { ContactSection } from '@/components/ui/contact-section';
 
 const CategoryButtons = ({ categories, onCategoryClick }) => (
     <div className={styles.categoryButtons}>
@@ -41,7 +42,7 @@ const PaginationLinks = ({ totalPages, category }) => (
     </div>
 );
 
-const Jobs = ({ posts, totalPages, categories, category }) => {
+const Jobs = ({ posts, totalPages, categories, category, topSectionText, bottomSectionText, bottomSectionButtonText, yoastSEO }) => {
     const router = useRouter();
 
     const handleCategoryClick = categoryId => {
@@ -49,13 +50,15 @@ const Jobs = ({ posts, totalPages, categories, category }) => {
     };
 
     return (
-        <Layout title='Jobs' description='Some description for SEO'>
+        <Layout yoastSEO={yoastSEO}>
             <div className={styles.jobs}>
+                <h1 className={styles.heading}>{topSectionText}</h1>
                 <CategoryButtons categories={categories} onCategoryClick={handleCategoryClick} />
                 <div className={styles.postsContainer}>
                     {posts.map(post => <Post key={post.id} isSmall post={post} />)}
                 </div>
                 <PaginationLinks totalPages={totalPages} category={category} />
+                <ContactSection headingText={bottomSectionText} buttonText={bottomSectionButtonText} />
             </div>
         </Layout>
     );

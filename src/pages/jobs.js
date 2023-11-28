@@ -1,14 +1,13 @@
 import { Jobs } from "@/components/screens/jobs";
 import { parse } from 'node-html-parser';
 
-export default function JobsPage({ posts, categories, totalPages, category, topSectionContent, bottomSectionContent }) {
+export default function JobsPage({ posts, categories, totalPages, category, topSectionContent, bottomSectionContent, yoastSEO }) {
     const topSectionParsed = parse(topSectionContent.content.rendered);
     const topSectionText = topSectionParsed.querySelector('p')?.innerText;
 
     const bottomSectionParsed = parse(bottomSectionContent.content.rendered);
     const bottomSectionText = bottomSectionParsed.querySelector('p')?.innerText;
     const bottomSectionButtonText = bottomSectionParsed.querySelector('.wp-block-button__link')?.innerText;
-
     return (
         <Jobs 
             posts={posts}
@@ -18,6 +17,7 @@ export default function JobsPage({ posts, categories, totalPages, category, topS
             topSectionText={topSectionText}
             bottomSectionText={bottomSectionText}
             bottomSectionButtonText={bottomSectionButtonText}
+            yoastSEO={yoastSEO}
         />
     );
 }
@@ -80,6 +80,11 @@ export async function getServerSideProps({ query }) {
     const topSectionContent = await fetchSectionContent('top_heading');
     const bottomSectionContent = await fetchSectionContent('contact_section');
 
+    // Fetch SEO data for 'jobs' page
+    const jobsPageRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/pages?slug=jobs`);
+    const jobsPage = await jobsPageRes.json();
+    const yoastSEO = jobsPage[0].yoast_head;
+
     return {
         props: {
             posts: processedPosts,
@@ -87,7 +92,8 @@ export async function getServerSideProps({ query }) {
             categories: categoryMap,
             category,
             topSectionContent,
-            bottomSectionContent
+            bottomSectionContent,
+            yoastSEO
         },
     };
 }

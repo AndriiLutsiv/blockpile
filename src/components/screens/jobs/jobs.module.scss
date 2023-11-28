@@ -4,9 +4,12 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 16px 125px 16px;
     background-color: #ece9e3;
     background-image: url(./images/box.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 
     .postsContainer {
         max-width: 1170px;
@@ -22,6 +25,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 204px;
 
     a {
         margin: 0 5px;
@@ -58,4 +62,12 @@
     &:not(:first-child) {
         font-weight: 600;
     }
+}
+
+.heading {
+    font-size: 81px;
+    margin: 0 auto 160px auto;
+    width: 100%;
+    max-width: 1170px;
+    font-weight: 400;
 }
