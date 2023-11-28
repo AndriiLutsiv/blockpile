@@ -22,12 +22,14 @@
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
+    padding: 0 20px;
 }
 
 .link {
     text-transform: uppercase;
     font-size: 16px;
     cursor: pointer;
+    padding: 0 20px;
 }
 
 .postsContainer {
@@ -42,19 +44,45 @@
     border-bottom: 4px solid #ed4d16;
     padding-bottom: 81px;
     margin: 0 auto;
+    padding: 0 20px 80px;
+
+    @media (max-width: 750px){
+        flex-direction: column;
+        border-bottom: none;
+    }
 }
 
 .contentBottom {
     background: #ece9e3;
-    padding: 450px 0 187px 0;
-
+    padding: 450px 20px 187px 20px;
+    @media (max-width: 750px){
+        flex-direction: column;
+        padding: 1150px 20px 187px 20px;
+    }
+    @media (max-width: 650px){
+        flex-direction: column;
+        padding: 950px 20px 187px 20px;
+    }
+    @media (max-width: 550px){
+        flex-direction: column;
+        padding: 950px 20px 187px 20px;
+    }
+    @media (max-width: 500px){
+        flex-direction: column;
+        padding: 900px 20px 187px 20px;
+    }
+    @media (max-width: 450px){
+        flex-direction: column;
+        padding: 850px 20px 187px 20px;
+    }
     & .title {
         width: 100%;
         max-width: 1170px;
         margin: 0 auto 41px auto;
+        padding: 0 20px;
     }
     .imageContainer{
-        padding: 0;
+        padding: 0 20px;
     }
 }
 
@@ -65,19 +93,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 750px){
+        flex-direction: column;
+        justify-content: center;
+        
+    }
 }
 
 .blogItem {
     width: 100%;
-    max-width: 28%;
+    max-width: 33%;
 
     & .imageContainer {
         width: 100%;
         margin-bottom: 20px;
     }
+    @media (max-width: 750px){
+        max-width: 100%;
+        
+    }
 }
 
 .imageText {
+    padding: 0 20px 20px;
     font-size: 18px;
 }
 
