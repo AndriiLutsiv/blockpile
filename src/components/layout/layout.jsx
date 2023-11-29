@@ -6,7 +6,7 @@ const Layout = ({ children, title, description, yoastSEO }) => {
 
     return <Meta title={title} description={description} yoastSEO={yoastSEO}>
         <Header />
-        {/* <main>{children}</main> */}
+        <main>{children}</main>
         <Footer />
     </Meta>
 }

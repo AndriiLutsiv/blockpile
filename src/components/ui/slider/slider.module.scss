@@ -1,39 +1,12 @@
 .mySlider {
+  
 }
 
 .slideBox {
-  padding: 10px 20px;
-  margin: 100px 0;
-  @media (max-width: 1169px){
-    max-width: 85%;
-}
-  @media (max-width: 1000px){
-    max-width: 75%;
-}
-  @media (max-width: 900px){
-    max-width: 70%;
-}
-  @media (max-width: 800px){
-    max-width: 62%;
-}
-  @media (max-width: 700px){
-        max-width: 57%;
-  }
-  @media (max-width: 700px){
-    max-width: 47%;
-}
-@media (max-width: 600px){
-  max-width: 50%;
-}
-@media (max-width: 560px){
-  max-width: 40%;
-}
-@media (max-width: 460px){
-  max-width: 30%;
-}
+  width: 100%;
 }
 
-.titleSlider {
+.text {
   font-size: 24px;
   font-weight: normal;
   font-family: "Montserrat-Variable";
@@ -48,7 +21,7 @@
   }
 }
 
-.titleSlider::before {
+.text::before {
   content: "“";
   position: absolute;
   top: -5px;
@@ -62,7 +35,7 @@
   opacity: 0.5;
 }
 
-.slideBoxI {
+.slideImgContainer {
   display: flex;
   width: 250px;
   gap: 20px;
@@ -90,21 +63,21 @@
     }
   }
 
-  .slideHeading {
+  .imgHeading {
     font-weight: normal;
     text-transform: uppercase;
   }
 }
 
 .mySlider :global(.slick-dots li) {
-  background: white; // Global override for all dots
+  background: white;
   border-radius: 50%;
   height: 12px;
   width: 12px;
 }
 
 .mySlider :global(.slick-dots li.slick-active ) {
-  background: #ed4d15; // Global override for the active dot
+  background: #ed4d15;
   border-radius: 50%;
 }
 
