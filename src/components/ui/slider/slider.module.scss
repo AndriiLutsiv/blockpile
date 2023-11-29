@@ -1,23 +1,27 @@
-.mySlider {
-  
-}
 
 .slideBox {
   width: 100%;
 }
 
 .text {
+  padding: 0 20px;
   font-size: 24px;
   font-weight: normal;
   font-family: "Montserrat-Variable";
   line-height: 1.4;
   position: relative;
+  @media (max-width: 650px) {
+    font-size: 18px;
+  }
 
   span {
     font-size: 24px;
     font-weight: bold;
     color: #ed4d15;
     opacity: 0.5;
+    @media (max-width: 650px) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -25,7 +29,7 @@
   content: "“";
   position: absolute;
   top: -5px;
-  left: -15px;
+  right: -15px;
   font-family: "Montserrat-Variable";
   font-weight: bold;
   color: #ed4d15;
@@ -42,6 +46,8 @@
   text-align: center;
   align-items: center;
   margin-top: 40px;
+  margin-left: 20px;
+  
 
   .slideImg {
     width: 80px;
@@ -52,6 +58,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  
+    @media (max-width: 650px) {
+      width: 50px;
+      height: 50px;
+    }
+    
 
     &::before {
       content: '';
@@ -60,12 +72,19 @@
       width: 15px;
       background: white;
       transform: rotate(45deg);
+      @media (max-width: 650px) {
+        width: 10px;
+        height: 10px;
+      }
     }
   }
 
   .imgHeading {
     font-weight: normal;
     text-transform: uppercase;
+    @media (max-width: 650px) {
+      font-size: 12px;;
+    }
   }
 }
 
