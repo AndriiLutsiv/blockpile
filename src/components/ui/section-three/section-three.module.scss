@@ -12,35 +12,76 @@
 .rowThree {
     display: flex;
     gap: 40px;
+
     @media (max-width: 1169px) {
-      flex-direction: column;
-      max-width: 800px;
-      align-items: center;
-      gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
+
     @media (max-width: 750px) {
         flex-direction: column;
-        max-width: 800px;
         align-items: flex-start;
-
-      }
+    }
 }
 
 .boxImg {
     width: 800px;
     height: 800px;
     margin-left: -150px;
+    transition: height 0.5s ease;
+    transition: max-width 0.5s ease;
+    transition: max-width 0.5s ease;
 
     @media (max-width: 1169px) {
+        margin-left: 10px;
+
+    }
+
+    @media (max-width: 800px) {
+        max-width: 700px;
+        height: 700px;
+        margin-left: 5px;
+        margin-left: 10px;
+        
+
+    }
+
+    @media (max-width: 720px) {
+        max-width: 650px;
+        height: 650px;
+        margin-left: 5px;
+        margin-left: 10px;
+
+    }
+
+    @media (max-width: 650px) {
+        max-width: 580px;
+        height: 580px;
+        margin-left: 5px;
+        margin-left: 10px;
+
+    }
+
+    @media (max-width: 580px) {
         max-width: 500px;
         height: 500px;
         margin-left: 5px;
         margin-left: 10px;
 
     }
-    @media (max-width: 600px) {
+
+    @media (max-width: 520px) {
         max-width: 400px;
         height: 400px;
+        margin-left: 5px;
+        margin-left: 10px;
+
+    }
+
+    @media (max-width: 450px) {
+        max-width: 320px;
+        height: 320px;
         margin-left: 5px;
         margin-left: 10px;
 
@@ -49,29 +90,27 @@
 
 .boxContentThree {
     padding-top: 180px;
-    @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1169px) {
         padding-top: 20px;
         padding-bottom: 50px;
     }
+
     @media (max-width: 999px) {
         max-width: 650px;
     }
-    @media (max-width: 700px) {
-        max-width: 500px;
-    }
-    @media (max-width: 550px) {
-        max-width: 350px;
-    }
-    
-
 
     .headingTitle {
         font-size: 36px;
         font-weight: normal;
         margin-bottom: 55px;
+
         @media (max-width: 1169px) {
             font-size: 28px;
         }
+
         @media (max-width: 800px) {
             font-size: 22px;
         }
@@ -81,12 +120,14 @@
         font-family: "Montserrat-Variable";
         margin-bottom: 20px;
         line-height: 1.2;
+
         @media (max-width: 1169px) {
             font-size: 22px;
         }
+
         @media (max-width: 800px) {
             font-size: 16px;
-           
+
         }
     }
 }
