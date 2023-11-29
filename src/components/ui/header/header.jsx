@@ -9,7 +9,7 @@ import Link from "next/link";
 const Header = () => {
   const { pathname } = useRouter();
   const [open, setOpen] = useState(false);
-  console.log('pathname', pathname);
+
   const toggleMenu = () => setOpen(!open);
 
   return (
@@ -23,7 +23,7 @@ const Header = () => {
         </div>
         <div className={classNames(styles.headerItems, { [styles.open]: open })}>
           <div className={styles.headerItem}>About</div>
-          <Link href={`/jobs`} className={classNames(styles.headerItem, { [styles.active]: pathname === '/jobs' })}>
+          <Link href={`/jobs?page=1`} className={classNames(styles.headerItem, { [styles.active]: pathname === '/jobs' })}>
             Case Studies
           </Link>
           <div className={styles.headerItem}>Clients</div>

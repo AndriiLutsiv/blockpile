@@ -5,6 +5,7 @@ import Layout from '@/components/layout/Layout';
 import Link from "next/link";
 import { useRouter } from 'next/router';
 import { ContactSection } from '@/components/ui/contact-section';
+import classNames from 'classnames';
 
 const CategoryButtons = ({ categories, onCategoryClick }) => (
     <div className={styles.categoryButtons}>
@@ -27,26 +28,45 @@ const createPaginationLink = (page, category) => ({
     },
 });
 
-const PaginationLinks = ({ totalPages, category }) => (
-    <div className={styles.pagination}>
-        {Array.from({ length: totalPages }, (_, index) => (
-            <Link
-                key={index}
-                href={createPaginationLink(index + 1, category)}
-                className={styles.link}
-                isSmall
-            >
-                {index + 1}
-            </Link>
-        ))}
-    </div>
-);
+const PaginationLinks = ({ totalPages, category }) => {
+    const { query } = useRouter();
+
+    const currentPage = parseInt(query.page, 10) || 1;
+
+    return (
+        <div className={styles.pagination}>
+            {Array.from({ length: totalPages }, (_, index) => {
+                const pageNumber = index + 1;
+                const isActive = (pageNumber === currentPage);
+
+                return (
+                    <Link
+                        key={index}
+                        href={createPaginationLink(pageNumber, category)}
+                        className={classNames(styles.link, { [styles.active]: isActive })}
+                        onClick={isActive ? (e) => e.preventDefault() : undefined}
+                    >
+                        {pageNumber}
+                    </Link>
+                );
+            })}
+        </div>
+    );
+};
 
 const Jobs = ({ posts, totalPages, categories, category, topSectionText, bottomSectionText, bottomSectionButtonText, yoastSEO }) => {
-    const router = useRouter();
+    const { push, query } = useRouter();
+
+    const updatedQuery = {...query, page: 1};
 
     const handleCategoryClick = categoryId => {
-        router.push(`/jobs?category=${categoryId}`);
+        push({
+            pathname: '/jobs',
+            query: {
+                ...updatedQuery, 
+                category: categoryId, 
+            },
+        });
     };
 
     return (
