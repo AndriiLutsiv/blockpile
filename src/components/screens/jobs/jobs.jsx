@@ -1,7 +1,7 @@
 import React from 'react';
 import { Post } from '@/components/ui/post';
 import styles from './jobs.module.scss';
-import Layout from '@/components/layout/Layout';
+import { Layout } from '@/components/layout';
 import Link from "next/link";
 import { useRouter } from 'next/router';
 import { ContactSection } from '@/components/ui/contact-section';
@@ -57,14 +57,14 @@ const PaginationLinks = ({ totalPages, category }) => {
 const Jobs = ({ posts, totalPages, categories, category, topSectionText, bottomSectionText, bottomSectionButtonText, yoastSEO }) => {
     const { push, query } = useRouter();
 
-    const updatedQuery = {...query, page: 1};
+    const updatedQuery = { ...query, page: 1 };
 
     const handleCategoryClick = categoryId => {
         push({
             pathname: '/jobs',
             query: {
-                ...updatedQuery, 
-                category: categoryId, 
+                ...updatedQuery,
+                category: categoryId,
             },
         });
     };

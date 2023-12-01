@@ -1,5 +1,5 @@
 import styles from './home.module.scss';
-import Layout from '@/components/layout/Layout';
+import { Layout } from '@/components/layout';
 import { SectionOne } from '@/components/ui/section-one';
 import { SectionTwo } from '@/components/ui/section-two';
 import { SectionThree } from '@/components/ui/section-three';
@@ -10,11 +10,11 @@ const Home = () => {
 
     return <Layout title='Home' description='Some description for seo'>
         <div className={styles.home}>
-        <SectionOne />
-        <SectionTwo />
-        <SectionThree />
-        <SectionFour />
-        <SectionFive />
+            <SectionOne />
+            <SectionTwo />
+            <SectionThree />
+            <SectionFour />
+            <SectionFive />
         </div>
     </Layout>
 

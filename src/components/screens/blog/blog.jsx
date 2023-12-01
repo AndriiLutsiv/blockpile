@@ -1,5 +1,5 @@
 import styles from './blog.module.scss';
-
+import { Layout } from '@/components/layout';
 
 const Blog = () => {
 
