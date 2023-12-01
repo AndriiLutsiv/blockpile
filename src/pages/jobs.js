@@ -40,7 +40,7 @@ export async function getServerSideProps({ query }) {
     } else {
         postsRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/posts?_embed&per_page=${perPage}&page=${page}`);
     }
-
+ 
     const posts = await postsRes.json();
 
     // Get total number of posts to calculate total pages
