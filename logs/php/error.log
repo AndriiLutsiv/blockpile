@@ -1,0 +1,1 @@
+[29-Nov-2023 15:10:16 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dev\Local Sites\blockpile\app\public\wp-includes\class-wp-customize-widgets.php on line 905
