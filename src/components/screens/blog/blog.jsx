@@ -9,6 +9,7 @@ import Link from "next/link";
 import { Post } from '../../ui/post/index';
 import Image from 'next/image';
 import SliderComponent from '@/components/ui/slider/slider';
+import { ContactSection } from '@/components/ui/contact-section';
 
 const Blog = () => {
     return (
@@ -97,6 +98,7 @@ const Blog = () => {
                             }} />
                         </div>
                     </div>
+                    <ContactSection></ContactSection>
                 </div>
             </div>
         </Layout>
