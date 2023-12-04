@@ -22,6 +22,7 @@
     left: 0;
     height: 100%;
     width: 100%;
+    display: block;
 
     & img {
         object-fit: cover;
@@ -40,6 +41,8 @@
 .title {
     font-size: 32px;
     margin-bottom: 16px;
+    text-decoration: none;
+    color: black;
 
     &.smaller {
         white-space: nowrap;

@@ -22,12 +22,18 @@ const Header = () => {
           <div className={styles.bar} />
         </div>
         <div className={classNames(styles.headerItems, { [styles.open]: open })}>
-          <div className={styles.headerItem}>About</div>
-          <Link href={`/jobs?page=1`} className={classNames(styles.headerItem, { [styles.active]: pathname === '/jobs' })}>
+          <Link href={`/about`} className={classNames(styles.headerItem, { [styles.active]: pathname === '/about' })}>
+            About
+          </Link>
+          <Link href={`/jobs?page=1&category=0`} className={classNames(styles.headerItem, { [styles.active]: pathname === '/jobs' })}>
             Case Studies
           </Link>
-          <div className={styles.headerItem}>Clients</div>
-          <div className={styles.headerItem}>Contact</div>
+          <Link href={`/clients`} className={classNames(styles.headerItem, { [styles.active]: pathname === '/clients' })}>
+            Clients
+          </Link>
+          <Link href={`/contact`} className={classNames(styles.headerItem, { [styles.active]: pathname === '/contact' })}>
+            Contact
+          </Link>
           <button className={styles.headerButton}>Start Project</button>
           <div className={styles.cross} onClick={toggleMenu} />
         </div>

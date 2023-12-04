@@ -11,20 +11,22 @@ import Image from 'next/image';
 import { ContactSection } from '../contact-section';
 
 const SectionFive = () => {
-  return <div className={styles.sectionFive}>
+  return <div id='section-five' className={styles.sectionFive}>
     <div className={styles.contentTop}>
       <div className={styles.row}>
         <h3 className={styles.title}>Featured Work</h3>
-        <Link href={`/jobs`} className={styles.link}>View all &gt;</Link>
+        <Link href={`/jobs?page=1&category=0`} className={styles.link}>View all &gt;</Link>
       </div>
       <div className={styles.postsContainer}>
         <Post post={{
+          id: 48,
           featuredImage: pict1,
           categoryNames: ['DEFI'],
           title: 'AirSwap',
           excerpt: 'Short descriptor here that can be one or two lines to give some insight before the jump.'
         }} />
         <Post post={{
+          id: 48,
           featuredImage: pict2,
           categoryNames: ['NFT'],
           title: 'BirdBlotter',
