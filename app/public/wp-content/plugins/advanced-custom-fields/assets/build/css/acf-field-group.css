@@ -2743,7 +2743,7 @@ html[dir=rtl] .acf-field-object.open > .handle {
   border-left-color: #EAECF0;
 }
 
-@container settings (max-width: 1170px) {
+@container settings (max-width: 1400px) {
   .acf-field-settings-split {
     border: none;
     flex-direction: column;
