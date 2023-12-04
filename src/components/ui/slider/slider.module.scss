@@ -47,8 +47,12 @@
   gap: 20px;
   text-align: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 70px;
   margin-left: 20px;
+
+  @media(max-width: 750px) {
+    margin-top: 50px;
+  }
 
   .slideImg {
     width: 80px;
@@ -117,5 +121,11 @@
   opacity: 1 !important;
   & .text {
     color: black !important;
+  }
+}
+
+.mySlider :global(.slick-dots) {
+  @media(max-width: 750px) {
+    bottom: -30px !important;
   }
 }

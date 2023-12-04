@@ -19,12 +19,14 @@ const SectionFive = () => {
       </div>
       <div className={styles.postsContainer}>
         <Post post={{
+          id: 48,
           featuredImage: pict1,
           categoryNames: ['DEFI'],
           title: 'AirSwap',
           excerpt: 'Short descriptor here that can be one or two lines to give some insight before the jump.'
         }} />
         <Post post={{
+          id: 48,
           featuredImage: pict2,
           categoryNames: ['NFT'],
           title: 'BirdBlotter',

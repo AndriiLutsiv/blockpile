@@ -37,9 +37,13 @@
     transition: linear 0.5s all;
 
     .titleImg {
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
         margin-bottom: 40px;
+        background-color: #ED4D16;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .heading4 {
@@ -50,7 +54,7 @@
 
     .title {
         font-family: "Montserrat-Variable";
-        font-size: 22px;
+        font-size: 18px;
         line-height: 1.4;
     }
 

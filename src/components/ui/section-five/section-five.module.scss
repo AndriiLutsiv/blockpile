@@ -55,7 +55,15 @@
 
     .contentBottom {
         background: #ece9e3;
-        padding: 400px 20px 187px 20px;
+        padding: 450px 20px 187px 20px;
+
+        @media (max-width: 1200px) {
+            padding: 400px 20px 150px 20px;
+        }
+
+        @media (max-width: 1000px) {
+            padding: 350px 20px 120px 20px;
+        }
 
         @media (max-width: 750px) {
             flex-direction: column;

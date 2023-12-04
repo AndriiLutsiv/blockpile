@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Post } from '@/components/ui/post';
 import styles from './jobs.module.scss';
 import { Layout } from '@/components/layout';
-import Link from "next/link";
 import { useRouter } from 'next/router';
 import { ContactSection } from '@/components/ui/contact-section';
 import classNames from 'classnames';
@@ -36,16 +35,15 @@ const createPaginationLink = (page, category) => ({
     pathname: '/jobs',
     query: {
         page,
-        ...(category ? { category } : {})
+        ...{ category }
     },
 });
 
-const PaginationLinks = ({ totalPages, category }) => {
-    const { query, push } = useRouter();
-    const currentPage = parseInt(query.page, 10) || 1;
-
+const PaginationLinks = ({ totalPages, category, currentPage }) => {
+    const { push } = useRouter();
 
     const handlePageClick = (selected) => {
+
         push(createPaginationLink(selected + 1, category), undefined, { scroll: false }).then(() => {
             // Check if the device is a tablet or smaller
             if (window.matchMedia("(max-width: 1072px)").matches) {
@@ -61,6 +59,7 @@ const PaginationLinks = ({ totalPages, category }) => {
 
     return (
         <ReactPaginate
+            key={category}
             previousLabel={'<'}
             nextLabel={'>'}
             breakLabel={'...'}
@@ -85,6 +84,7 @@ const PaginationLinks = ({ totalPages, category }) => {
 
 const Jobs = ({ posts, totalPages, categories, category, topSectionText, bottomSectionText, bottomSectionButtonText, yoastSEO }) => {
     const { push, query } = useRouter();
+    const currentPage = parseInt(query.page, 10) || 1;
 
     const updatedQuery = { ...query, page: 1 };
 
@@ -107,7 +107,7 @@ const Jobs = ({ posts, totalPages, categories, category, topSectionText, bottomS
                 <div className={styles.postsContainer}>
                     {posts.map(post => <Post key={post.id} isSmall post={post} />)}
                 </div>
-                <PaginationLinks totalPages={totalPages} category={category} />
+                <PaginationLinks totalPages={totalPages} category={category} currentPage={currentPage} />
                 <ContactSection headingText={bottomSectionText} buttonText={bottomSectionButtonText} />
             </div>
         </Layout>
