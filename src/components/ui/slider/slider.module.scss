@@ -1,6 +1,6 @@
-
 .slideBox {
   width: 100%;
+  background: #ece9e3;
 }
 
 .text {
@@ -10,6 +10,8 @@
   font-family: "Montserrat-Variable";
   line-height: 1.4;
   position: relative;
+  transition: all 0.5s;
+  
   @media (max-width: 650px) {
     font-size: 18px;
   }
@@ -47,7 +49,6 @@
   align-items: center;
   margin-top: 40px;
   margin-left: 20px;
-  
 
   .slideImg {
     width: 80px;
@@ -58,15 +59,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  
+
     @media (max-width: 650px) {
       width: 50px;
       height: 50px;
     }
-    
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       height: 15px;
       width: 15px;
@@ -83,7 +83,7 @@
     font-weight: normal;
     text-transform: uppercase;
     @media (max-width: 650px) {
-      font-size: 12px;;
+      font-size: 12px;
     }
   }
 }
@@ -95,11 +95,27 @@
   width: 12px;
 }
 
-.mySlider :global(.slick-dots li.slick-active ) {
+.mySlider :global(.slick-dots li.slick-active) {
   background: #ed4d15;
   border-radius: 50%;
 }
 
-.mySlider :global(.slick-dots li button ) {
- opacity: 0;
+.mySlider :global(.slick-dots li button) {
+  opacity: 0;
+}
+
+.mySlider :global(.slick-slide) {
+  opacity: 0 !important;
+  transition: all 500ms ease !important;
+
+  & .text {
+    color: white !important;
+  }
+}
+
+.mySlider :global(.slick-active) {
+  opacity: 1 !important;
+  & .text {
+    color: black !important;
+  }
 }

@@ -7,14 +7,14 @@ const Post = ({ isSmall, post }) => {
 
   return <div className={styles.post}>
     <div className={classNames(styles.imgContainer, {[styles.smaller]: isSmall})}>
-      <div className={styles.imageWrapper}>
+      <Link className={styles.imageWrapper} href={`/posts/${post.id}`}>
         <Image
           src={post.featuredImage}
           alt="Image"
           layout="fill"
           objectFit="cover"
         />
-      </div>
+      </Link>
     </div>
     <div className={styles.category}>{post.categoryNames[0]}</div>
     <Link href={`/posts/${post.id}`} className={classNames(styles.title, {[styles.smaller]: isSmall})}>{post.title}</Link>

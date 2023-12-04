@@ -36,14 +36,6 @@
     flex-direction: column;
     transition: linear 0.5s all;
 
-    @media (max-width: 1000px) {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-
-    }
-
     .titleImg {
         width: 90px;
         height: 90px;
@@ -60,6 +52,14 @@
         font-family: "Montserrat-Variable";
         font-size: 22px;
         line-height: 1.4;
+    }
+
+    @media (max-width: 1000px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
     }
 
     @media (max-width: 820px) {

@@ -9,7 +9,7 @@ export default function JobsPage({ posts, categories, totalPages, category, topS
     const bottomSectionText = bottomSectionParsed.querySelector('p')?.innerText;
     const bottomSectionButtonText = bottomSectionParsed.querySelector('.wp-block-button__link')?.innerText;
 
-    if (error) {
+    if (error) { 
         return <div>Error: {error}</div>;
     }
 
