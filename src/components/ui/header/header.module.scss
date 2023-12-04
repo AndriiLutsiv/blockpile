@@ -14,7 +14,7 @@
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -103,6 +103,7 @@
   color: #fff;
   border: none;
   cursor: pointer;
+  margin-top: -8px;
   transition: background-color 0.3s ease;
 
   &:hover {
@@ -117,7 +118,7 @@
 .burger {
   cursor: pointer;
   height: 40px;
-  width: 50px;
+  width: 40px;
   display: none;
   position: relative;
 

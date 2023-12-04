@@ -1,7 +1,7 @@
 import styles from './section-two.module.scss'
-import icon1 from './images/photo1.jpg'
-import icon2 from './images/photo2.jpg'
-import icon3 from './images/photo3.jpg'
+import icon1 from './images/999.svg'
+import icon2 from './images/888.svg'
+import icon3 from './images/777.svg'
 import Image from 'next/image';
 
 const SectionTwo = () => {
@@ -15,9 +15,7 @@ const SectionTwo = () => {
                             <Image
                                 src={icon1}
                                 alt="icon1"
-                                width={90}
-                                height={90}
-                                layout="responsive"
+                              
                             />
                         </div>
                         <h4 className={styles.heading4}>Advisory</h4>
@@ -28,9 +26,7 @@ const SectionTwo = () => {
                             <Image
                                 src={icon2}
                                 alt="icon2"
-                                width={90}
-                                height={90}
-                                layout="responsive"
+                               
                             />
                         </div>
                         <h4 className={styles.heading4}>Development</h4>
@@ -41,9 +37,7 @@ const SectionTwo = () => {
                             <Image
                                 src={icon3}
                                 alt="icon3"
-                                width={90}
-                                height={90}
-                                layout="responsive"
+                                
                             />
                         </div>
                         <h4 className={styles.heading4}>Implementation</h4>
