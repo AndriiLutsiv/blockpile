@@ -10,11 +10,7 @@ import { Post } from '../../ui/post/index';
 import Image from 'next/image';
 import { ContactSection } from '@/components/ui/contact-section';
 
-const hardcodedText = 'Please add content';
-
-
-const PostDetails = ({ postDetailsData }) => {
-    console.log('postDetailsData', postDetailsData);
+const PostDetails = () => {
     return (
         <Layout title='Blog' description='Some description for SEO'>
             <div className={styles.postDetails}>
@@ -29,17 +25,19 @@ const PostDetails = ({ postDetailsData }) => {
 
                     <div className={styles.topContent}>
                         <div className={styles.contentContainer}>
-                            <h2 className={styles.title}> {postDetailsData?.acf?.topsectionheading || hardcodedText}</h2>
-                            <p className={styles.subTitle}>{postDetailsData?.acf?.topsectiondescription || hardcodedText}</p>
+                            <h2 className={styles.title}>Launching a photography collection</h2>
+                            <p className={styles.subTitle}>A collection of 4 NFTs by Daniel Koeth with different distribution mechanisms and rarities. Completed in 2022.</p>
                             <div className={styles.link}>
-                                {postDetailsData?.acf?.topsectiontags || hardcodedText}
+                                <span><a href="#">Website</a>   /   </span>
+                                <span><a href="#">Opensea</a>   /   </span>
+                                <span><a href="#">Github</a></span>
                             </div>
                             <div className={styles.technologiesUsed}>
-                                <h4>{postDetailsData?.acf?.topsectiontechheading || hardcodedText}</h4>
-                                <p>{postDetailsData?.acf?.toptech1 || hardcodedText}</p>
-                                <p>{postDetailsData?.acf?.toptech2 || hardcodedText}</p>
-                                <p>{postDetailsData?.acf?.toptech3 || hardcodedText}</p>
-                                <p>{postDetailsData?.acf?.toptech4 || hardcodedText}</p>
+                                <h4>Scope of work</h4>
+                                <p>Burn/Own to mint contracts</p>
+                                <p>Truffle</p>
+                                <p>React</p>
+                                <p>Web3.js</p>
                             </div>
                         </div>
                         <div className={styles.imgContainer}>
@@ -55,22 +53,21 @@ const PostDetails = ({ postDetailsData }) => {
                             <Image src={casper} alt="picture" />
                         </div>
                         <div className={styles.textContent}>
-                            <h2 className={styles.title}>{postDetailsData?.acf?.middletexttitle || hardcodedText}</h2>
-                            {
-                                (postDetailsData?.acf?.middletextdescription || hardcodedText).split('. ').map((sentence, index) => (
-                                    <p key={index} className={styles.textItem}>
-                                        {sentence}
-                                    </p>
-                                ))
-                            }
+                            <h2 className={styles.title}>4 unique items, 1 video, editions all rolled into one contract</h2>
+                            <p className={styles.textItem}>As these things good, Daniel was referred to use on Twitter and is a talented SuperRare artist and photographer that needed assistance with how best to deliver the launch to his collector base.</p>
+                            <p className={styles.textItem}> Combining different distribution mechanisms and rarities posed a challenge that we willingly accepted.
+                            </p>
+                            <p className={styles.textItem}>One of the main utilities was a lifetime allowlist for the token owner which is an interesting dynamic. </p>
                         </div>
                     </div>
+
                     <div className={styles.bottomContent}>
                         <div className={styles.slideBox}>
-                            <p className={styles.text}>{postDetailsData?.acf?.middlequotetext || hardcodedText}<span>&nbsp;”</span></p>
+                            <p className={styles.text}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.<span>”</span> <br></br>
+                                Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
                             <div className={styles.slideImgContainer}>
                                 <div className={styles.slideImg} />
-                                <h4 className={styles.imgHeading}>{postDetailsData?.acf?.middletestimonialtext}</h4>
+                                <h4 className={styles.imgHeading}>f-1 collective</h4>
                             </div>
                         </div>
                         <div className={styles.details}>
