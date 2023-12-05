@@ -8,7 +8,7 @@ const SectionTwo = () => {
     return <div className={styles.sectionTwo}>
         <div className={styles.sectionBoxTwo}>
             <div className={styles.container}>
-                <h3 className={styles.heading3}>Our services</h3>
+                <h3 id='our-serveces-section' className={styles.heading3}>Our services</h3>
                 <div className={styles.rowTwo}>
                     <div className={styles.coll3}>
                         <div className={styles.titleImg}>

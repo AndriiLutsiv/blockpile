@@ -6,7 +6,7 @@ import Link from "next/link";
 const Post = ({ isSmall, post }) => {
 
   return <div className={styles.post}>
-    <div className={classNames(styles.imgContainer, {[styles.smaller]: isSmall})}>
+    <div className={classNames(styles.imgContainer, { [styles.smaller]: isSmall })}>
       <Link className={styles.imageWrapper} href={`/posts/${post.id}`}>
         <Image
           src={post.featuredImage}
@@ -17,8 +17,8 @@ const Post = ({ isSmall, post }) => {
       </Link>
     </div>
     <div className={styles.category}>{post.categoryNames[0]}</div>
-    <Link href={`/posts/${post.id}`} className={classNames(styles.title, {[styles.smaller]: isSmall})}>{post.title}</Link>
-    <p className={classNames(styles.text, {[styles.smaller]: isSmall})}>{post.excerpt}</p>
+    <Link href={`/posts/${post.id}`} className={classNames(styles.title, { [styles.smaller]: isSmall })}>{post.title}</Link>
+    <p className={classNames(styles.text, { [styles.smaller]: isSmall })}>{post.excerpt}</p>
   </div>
 }
 

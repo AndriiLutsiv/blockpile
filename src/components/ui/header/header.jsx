@@ -12,6 +12,20 @@ const Header = () => {
 
   const toggleMenu = () => setOpen(!open);
 
+  const scrollToSection = (sectionId) => {
+    const target = document.getElementById(sectionId);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleStartProjectClick = () => {
+    const email = 'info@blockpile.com';
+    const subject = 'Project Inquiry';
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -22,19 +36,28 @@ const Header = () => {
           <div className={styles.bar} />
         </div>
         <div className={classNames(styles.headerItems, { [styles.open]: open })}>
-          <Link href={`/about`} className={classNames(styles.headerItem, { [styles.active]: pathname === '/about' })}>
+          <div
+            onClick={() => scrollToSection('our-serveces-section')}
+            className={classNames(styles.headerItem, { [styles.active]: pathname === '/about' })}
+          >
             About
-          </Link>
+          </div>
           <Link href={`/jobs?page=1&category=0`} className={classNames(styles.headerItem, { [styles.active]: pathname === '/jobs' })}>
             Case Studies
           </Link>
-          <Link href={`/clients`} className={classNames(styles.headerItem, { [styles.active]: pathname === '/clients' })}>
+          <div
+            onClick={() => scrollToSection('testimonials-section')}
+            className={classNames(styles.headerItem, { [styles.active]: pathname === '/clients' })}
+          >
             Clients
-          </Link>
-          <Link href={`/contact`} className={classNames(styles.headerItem, { [styles.active]: pathname === '/contact' })}>
+          </div>
+          <div
+            onClick={() => scrollToSection('footer')}
+            className={classNames(styles.headerItem, { [styles.active]: pathname === '/contact' })}
+          >
             Contact
-          </Link>
-          <button className={styles.headerButton}>Start Project</button>
+          </div>
+          <button onClick={handleStartProjectClick} className={styles.headerButton}>Start Project</button>
           <div className={styles.cross} onClick={toggleMenu} />
         </div>
       </div>

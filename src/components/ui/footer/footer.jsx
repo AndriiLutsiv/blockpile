@@ -3,7 +3,7 @@ import styles from './footer.module.scss';
 import logo1 from './images/Logo.png'
 
 const Footer = () => {
-    return <div className={styles.sectionFooter}>
+    return <div id='footer' className={styles.sectionFooter}>
         <div className={styles.container}>
             <div className={styles.footerBox}>
                 <div className={styles.logoRow}>
@@ -11,8 +11,6 @@ const Footer = () => {
                         <Image
                             src={logo1}
                             alt="Image"
-                            // width={615}
-                            // height={437}
                             layout="responsive"
                         />
                     </div>
@@ -20,7 +18,7 @@ const Footer = () => {
                         <ul className={styles.contact}>
                             <li>Contact</li>
                             <li>info@blockpile.xyz</li>
-                            <li>Twitte</li>
+                            <li>Twitter</li>
                         </ul>
                         <ul>
                             <li>Home</li>
@@ -30,8 +28,6 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-
-
                 <div className={styles.privacy}>
                     <ul>
                         <li>Terms</li>
