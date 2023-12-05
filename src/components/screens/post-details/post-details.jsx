@@ -1,5 +1,5 @@
 import styles from './post-details.module.scss';
-import Layout from '@/components/layout/Layout';
+import { Layout } from '@/components/layout';
 import lux from './images/lux.png'
 import video from './images/video.png'
 import casper from './images/casper.png'
