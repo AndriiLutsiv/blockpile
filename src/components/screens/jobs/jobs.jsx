@@ -7,7 +7,6 @@ import { ContactSection } from '@/components/ui/contact-section';
 import classNames from 'classnames';
 import ReactPaginate from 'react-paginate';
 
-
 const CategoryButtons = ({ categories, onCategoryClick }) => {
     const { query } = useRouter();
     const currentCategory = query.category;
@@ -81,7 +80,6 @@ const PaginationLinks = ({ totalPages, category, currentPage }) => {
     );
 };
 
-
 const Jobs = ({ posts, totalPages, categories, category, topSectionText, bottomSectionText, bottomSectionButtonText, yoastSEO }) => {
     const { push, query } = useRouter();
     const currentPage = parseInt(query.page, 10) || 1;
@@ -98,9 +96,8 @@ const Jobs = ({ posts, totalPages, categories, category, topSectionText, bottomS
         }, undefined, { scroll: false });
     };
 
-
     return (
-        <Layout yoastSEO={yoastSEO}>
+        <Layout title='Case Studies' yoastSEO={yoastSEO}>
             <div className={styles.jobs}>
                 <h1 className={styles.heading}>{topSectionText}</h1>
                 <CategoryButtons categories={categories} onCategoryClick={handleCategoryClick} />
