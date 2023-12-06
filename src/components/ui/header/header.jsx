@@ -27,7 +27,7 @@ const Header = () => {
       push(`/?scrollTo=${sectionId}`);
     }
   };
-
+ 
   useEffect(() => {
     const { scrollTo } = query;
     if (scrollTo) {
