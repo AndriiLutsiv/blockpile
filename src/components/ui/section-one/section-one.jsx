@@ -5,7 +5,7 @@ import Image from 'next/image';
 const SectionOne = () => {
 
     const scrollToSectionTwo = () => {
-        const target = document.getElementById('section-five');
+        const target = document.getElementById('our-services-section');
         if (target) {
             target.scrollIntoView({ behavior: 'smooth' });
         }

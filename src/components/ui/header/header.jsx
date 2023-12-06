@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import logo from './images/logo.svg';
 import styles from './header.module.scss';
@@ -7,24 +7,36 @@ import classNames from 'classnames';
 import Link from "next/link";
 
 const Header = () => {
-  const { pathname } = useRouter();
+  const { pathname, query, push } = useRouter();
   const [open, setOpen] = useState(false);
 
   const toggleMenu = () => setOpen(!open);
-
-  const scrollToSection = (sectionId) => {
-    const target = document.getElementById(sectionId);
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const handleStartProjectClick = () => {
     const email = 'info@blockpile.com';
     const subject = 'Project Inquiry';
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
-    window.location.href = mailtoLink;
+    window.open(mailtoLink, '_blank');
   };
+
+  const scrollToSection = (sectionId) => {
+    const target = document.getElementById(sectionId);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    } else {
+      push(`/?scrollTo=${sectionId}`);
+    }
+  };
+
+  useEffect(() => {
+    const { scrollTo } = query;
+    if (scrollTo) {
+      const target = document.getElementById(scrollTo);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      }
+    }
+  }, [query, pathname]);
 
   return (
     <header className={styles.header}>
@@ -37,23 +49,26 @@ const Header = () => {
         </div>
         <div className={classNames(styles.headerItems, { [styles.open]: open })}>
           <div
-            onClick={() => scrollToSection('our-serveces-section')}
-            className={classNames(styles.headerItem, { [styles.active]: pathname === '/about' })}
+            onClick={() => scrollToSection('our-services-section')}
+            className={styles.headerItem}
           >
             About
           </div>
-          <Link href={`/jobs?page=1&category=0`} className={classNames(styles.headerItem, { [styles.active]: pathname === '/jobs' })}>
+          <div
+            onClick={() => scrollToSection('case-studies-section')}
+            className={styles.headerItem}
+          >
             Case Studies
-          </Link>
+          </div>
           <div
             onClick={() => scrollToSection('testimonials-section')}
-            className={classNames(styles.headerItem, { [styles.active]: pathname === '/clients' })}
+            className={styles.headerItem}
           >
             Clients
           </div>
           <div
             onClick={() => scrollToSection('footer')}
-            className={classNames(styles.headerItem, { [styles.active]: pathname === '/contact' })}
+            className={styles.headerItem}
           >
             Contact
           </div>
