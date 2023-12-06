@@ -2,14 +2,10 @@ import Image from 'next/image';
 import styles from './footer.module.scss';
 import logo1 from './images/Logo.png'
 import Link from "next/link";
+import { useRouter } from 'next/router';
 
 const Footer = () => {
-    const scrollToSection = (sectionId) => {
-        const target = document.getElementById(sectionId);
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'end' });;
-        }
-    };
+    const { pathname, query, push } = useRouter();
 
     const handleEmailClick = () => {
         const email = 'info@blockpile.com';
@@ -17,6 +13,25 @@ const Footer = () => {
         const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
         window.open(mailtoLink, '_blank');
     };
+
+    const scrollToSection = (sectionId) => {
+        const target = document.getElementById(sectionId);
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        } else {
+            push(`/?scrollTo=${sectionId}`);
+        }
+    };
+
+    useEffect(() => {
+        const { scrollTo } = query;
+        if (scrollTo) {
+            const target = document.getElementById(scrollTo);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            }
+        }
+    }, [query, pathname]);
 
     return <div id='footer' className={styles.sectionFooter}>
         <div className={styles.container}>
