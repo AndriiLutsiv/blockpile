@@ -3,6 +3,7 @@ import styles from './footer.module.scss';
 import logo1 from './images/Logo.png'
 import Link from "next/link";
 import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 const Footer = () => {
     const { pathname, query, push } = useRouter();
