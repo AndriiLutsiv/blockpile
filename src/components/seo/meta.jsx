@@ -7,7 +7,7 @@ const Meta = ({ title, description, yoastSEO, children }) => {
 
     return <>
         <Head>
-            {title && <title>{title}</title>}
+            
             {description &&
                 <>
                     <meta name='description' content={description} />
@@ -16,6 +16,7 @@ const Meta = ({ title, description, yoastSEO, children }) => {
                 </>
             }
             {yoastSEO && parse(yoastSEO)}
+            {title && <title>{title}</title>}
         </Head>
         {children}
     </>
