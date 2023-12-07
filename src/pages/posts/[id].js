@@ -9,7 +9,6 @@ export default function PostDetailsPage({ postDetailsData }) {
 export async function getServerSideProps(context) {
   const { id } = context.params; // Get the post ID from the URL
 
-  console.log('REST', `${process.env.WP_REST_URL}/wp-json/wp/v2/posts/${id}?_embed`);
   // Fetch post by ID
   const postRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/posts/${id}?_embed`);
   const postData = await postRes.json();

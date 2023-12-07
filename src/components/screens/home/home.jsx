@@ -6,18 +6,17 @@ import { SectionThree } from '@/components/ui/section-three';
 import { SectionFour } from '@/components/ui/section-four';
 import { SectionFive } from '@/components/ui/section-five';
 
-const Home = () => {
+const Home = ({ testimonials }) => {
 
     return <Layout title='Home' description='Some description for seo'>
         <div className={styles.home}>
             <SectionOne />
             <SectionTwo />
             <SectionThree />
-            <SectionFour />
+            <SectionFour testimonials={testimonials} />
             <SectionFive />
         </div>
     </Layout>
-
 }
 
 export default Home;

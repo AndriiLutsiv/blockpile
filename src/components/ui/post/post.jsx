@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const Post = ({ isSmall, post }) => {
 
-  return <div className={styles.post}>
+return <div className={styles.post}>
     <div className={classNames(styles.imgContainer, { [styles.smaller]: isSmall })}>
       <Link className={styles.imageWrapper} href={`/posts/${post.id}`}>
         <Image
-          src={post.featuredImage}
+          src={post.featuredImage || ''}
           alt="Image"
           layout="fill"
           objectFit="cover"

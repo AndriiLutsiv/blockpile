@@ -11,8 +11,6 @@ import Image from 'next/image';
 import { ContactSection } from '@/components/ui/contact-section';
 
 const hardcodedText = 'Please add content';
-
-
 const PostDetails = ({ postDetailsData }) => {
     console.log('postDetailsData', postDetailsData);
     return (
