@@ -1,7 +1,5 @@
 import React from 'react';
 import styles from './section-five.module.scss'
-import pict1 from './images/work1.jpg'
-import pict2 from './images/work2.jpg'
 import pict3 from './images/blog1.jpg'
 import pict4 from './images/blog2.jpg'
 import pict5 from './images/birds.png'
@@ -10,7 +8,7 @@ import { Post } from '../post';
 import Image from 'next/image';
 import { ContactSection } from '../contact-section';
 
-const SectionFive = () => {
+const SectionFive = ({ randomPosts, contactSectionText, contactSectionButtonText }) => {
   return <div className={styles.sectionFive}>
     <div className={styles.contentTop}>
       <div className={styles.row}>
@@ -18,20 +16,7 @@ const SectionFive = () => {
         <Link href={`/jobs?page=1&category=0`} className={styles.link}>View all &gt;</Link>
       </div>
       <div id='case-studies-section' className={styles.postsContainer}>
-        <Post post={{
-          id: 48,
-          featuredImage: pict1,
-          categoryNames: ['DEFI'],
-          title: 'AirSwap',
-          excerpt: 'Short descriptor here that can be one or two lines to give some insight before the jump.'
-        }} />
-        <Post post={{
-          id: 48,
-          featuredImage: pict2,
-          categoryNames: ['NFT'],
-          title: 'BirdBlotter',
-          excerpt: 'Short descriptor here that can be one or two lines to give some insight before the jump.'
-        }} />
+        {randomPosts.map(post => <Post key={post.id} post={post} />)}
       </div>
     </div>
     <div className={styles.contentBottom}>
@@ -77,8 +62,8 @@ const SectionFive = () => {
     </div>
     <div className={styles.contactContainer}>
       <ContactSection
-        headingText='Do you have a Web3 project in mind? Let’s discuss how we can help.'
-        buttonText='Contact'
+        headingText={contactSectionText}
+        buttonText={contactSectionButtonText}
       />
     </div>
   </div>

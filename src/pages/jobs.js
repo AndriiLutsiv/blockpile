@@ -9,7 +9,7 @@ export default function JobsPage({ posts, categories, totalPages, category, topS
     const bottomSectionText = bottomSectionParsed.querySelector('p')?.innerText;
     const bottomSectionButtonText = bottomSectionParsed.querySelector('.wp-block-button__link')?.innerText;
 
-    if (error) { 
+    if (error) {
         return <div>Error: {error}</div>;
     }
 
@@ -34,7 +34,7 @@ async function fetchSectionContent(slug) {
         return data.length ? data[0] : null;
     } catch (error) {
         console.error(`Error fetching section content for slug ${slug}:`, error);
-        return null; // or handle error appropriately
+        return null;
     }
 }
 
