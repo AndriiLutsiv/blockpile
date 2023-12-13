@@ -44,8 +44,13 @@
         list-style: none;
         cursor: pointer;
         color: black;
+
+        & a {
+            color: black;
+        }
     }
 }
+
 .footerLogo{
     height: 85px;
     width: 85px;

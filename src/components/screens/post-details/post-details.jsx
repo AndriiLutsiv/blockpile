@@ -3,15 +3,14 @@ import { Layout } from '@/components/layout';
 import lux from './images/lux.png'
 import video from './images/video.png'
 import casper from './images/casper.png'
-import pict1 from './images/work1.jpg'
-import pict2 from './images/work2.jpg'
 import Link from "next/link";
 import { Post } from '../../ui/post/index';
 import Image from 'next/image';
 import { ContactSection } from '@/components/ui/contact-section';
 
 const hardcodedText = 'Please add content';
-const PostDetails = ({ postDetailsData }) => {
+const PostDetails = ({ postDetailsData, contactSectionText, contactSectionButtonText, randomPosts }) => {
+    console.log('postDetailsData', postDetailsData.acf);
     return (
         <Layout title='Blog' description='Some description for SEO'>
             <div className={styles.postDetails}>
@@ -76,26 +75,10 @@ const PostDetails = ({ postDetailsData }) => {
                                 <Link href={`/jobs`} className={styles.link}>View all &gt;</Link>
                             </div>
                             <div className={styles.postsContainer}>
-                                <Post post={{
-                                    id: 48,
-                                    featuredImage: pict1,
-                                    categoryNames: ['DEFI'],
-                                    title: 'AirSwap',
-                                    excerpt: 'Short descriptor here that can be one or two lines to give some insight before the jump.'
-                                }} />
-                                <Post post={{
-                                    id: 48,
-                                    featuredImage: pict2,
-                                    categoryNames: ['NFT'],
-                                    title: 'BirdBlotter',
-                                    excerpt: 'Short descriptor here that can be one or two lines to give some insight before the jump.'
-                                }} />
+                                {randomPosts.map(post => <Post key={post.id} post={post} />)}
                             </div>
                         </div>
-                        <ContactSection
-                            headingText="Do you have a Web3 project in mind? Let’s discuss how we can help."
-                            buttonText="Contact"
-                        />
+                        <ContactSection headingText={contactSectionText} buttonText={contactSectionButtonText} />
                     </div>
                 </div>
             </div>
