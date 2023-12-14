@@ -1,8 +1,5 @@
 import styles from './post-details.module.scss';
 import { Layout } from '@/components/layout';
-import lux from './images/lux.png'
-import video from './images/video.png'
-import casper from './images/casper.png'
 import Link from "next/link";
 import { Post } from '../../ui/post/index';
 import Image from 'next/image';
@@ -10,9 +7,8 @@ import { ContactSection } from '@/components/ui/contact-section';
 
 const hardcodedText = 'Please add content';
 const PostDetails = ({ postDetailsData, contactSectionText, contactSectionButtonText, randomPosts }) => {
-    console.log('postDetailsData', postDetailsData.acf);
     return (
-        <Layout title='Blog' description='Some description for SEO'>
+        <Layout title='Blog' yoastSEO={postDetailsData.yoast_head}>
             <div className={styles.postDetails}>
                 <div className={styles.container}>
                     <div className={styles.categoryContainer}>
@@ -22,13 +18,22 @@ const PostDetails = ({ postDetailsData, contactSectionText, contactSectionButton
                         <span> - </span>
                         <span className={styles.categoryItem}>LUX</span>
                     </div>
-
                     <div className={styles.topContent}>
                         <div className={styles.contentContainer}>
                             <h2 className={styles.title}> {postDetailsData?.acf?.topsectionheading || hardcodedText}</h2>
                             <p className={styles.subTitle}>{postDetailsData?.acf?.topsectiondescription || hardcodedText}</p>
-                            <div className={styles.link}>
-                                {postDetailsData?.acf?.topsectiontags || hardcodedText}
+                            <div className={styles.links}>
+                                {postDetailsData?.acf.topsectionlink1 && (
+                                    <a href={postDetailsData.acf.topsectionlink1} target="_blank" rel="noopener noreferrer">Website</a>
+                                )}
+                                {postDetailsData?.acf.topsectionlink1 && postDetailsData?.acf.topsectionlink2 && ' / '}
+                                {postDetailsData?.acf.topsectionlink2 && (
+                                    <a href={postDetailsData.acf.topsectionlink2} target="_blank" rel="noopener noreferrer">Opensea</a>
+                                )}
+                                {postDetailsData?.acf.topsectionlink2 && postDetailsData?.acf.topsectionlink3 && ' / '}
+                                {postDetailsData?.acf.topsectionlink3 && (
+                                    <a href={postDetailsData.acf.topsectionlink4} target="_blank" rel="noopener noreferrer">Github</a>
+                                )}
                             </div>
                             <div className={styles.technologiesUsed}>
                                 <h4>{postDetailsData?.acf?.topsectiontechheading || hardcodedText}</h4>
@@ -39,16 +44,15 @@ const PostDetails = ({ postDetailsData, contactSectionText, contactSectionButton
                             </div>
                         </div>
                         <div className={styles.imgContainer}>
-                            <Image src={lux} alt="picture" />
+                            <Image width={800} height={560} src={postDetailsData?.topImageData.source_url || ''} alt="picture" layout="responsive" />
                         </div>
                     </div>
                     <div className={styles.videoContent}>
-                        <Image src={video} alt="picture" />
+                        <Image width={1360} height={900} src={postDetailsData?.middleImageCoverData.source_url || ''} alt="picture" layout="responsive" />
                     </div>
-
                     <div className={styles.middleContent}>
                         <div className={styles.imageContainer}>
-                            <Image src={casper} alt="picture" />
+                            <Image width={720} height={500} src={postDetailsData?.middleTextImageData.source_url || ''} alt="picture" />
                         </div>
                         <div className={styles.textContent}>
                             <h2 className={styles.title}>{postDetailsData?.acf?.middletexttitle || hardcodedText}</h2>
@@ -72,7 +76,7 @@ const PostDetails = ({ postDetailsData, contactSectionText, contactSectionButton
                         <div className={styles.details}>
                             <div className={styles.row}>
                                 <h3 className={styles.title}>Featured Work</h3>
-                                <Link href={`/jobs`} className={styles.link}>View all &gt;</Link>
+                                <Link href={`/jobs`}>View all &gt;</Link>
                             </div>
                             <div className={styles.postsContainer}>
                                 {randomPosts.map(post => <Post key={post.id} post={post} />)}

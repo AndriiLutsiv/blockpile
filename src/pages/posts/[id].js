@@ -36,12 +36,27 @@ export async function getServerSideProps(context) {
     const categoryRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/categories/${categoryId}`);
     const categoryData = await categoryRes.json();
 
+    // Fetch random posts
     const randomPostsBatch = await fetchRandomBatchOfPosts(6);
+    // Fetch contact section
     const contactSection = await fetchSectionContent('contact_section');
+
+    // Fetch images by ID
+    const topImageRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/media/${postData.acf.topimage}`);
+    const topImageData = await topImageRes.json();
+
+    const middleImageCoverRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/media/${postData.acf.middleimagecover}`);
+    const middleImageCoverData = await middleImageCoverRes.json();
+
+    const middleTextImageRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/media/${postData.acf.middletextimage}`);
+    const middleTextImageData = await middleTextImageRes.json();
 
     const postDetailsData = {
       ...postData,
-      categoryName: categoryData.name
+      categoryName: categoryData.name,
+      topImageData,
+      middleImageCoverData,
+      middleTextImageData,
     };
 
     return {
