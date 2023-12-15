@@ -1,14 +1,11 @@
 import React from 'react';
 import styles from './section-five.module.scss'
-import pict3 from './images/blog1.jpg'
-import pict4 from './images/blog2.jpg'
-import pict5 from './images/birds.png'
 import Link from "next/link";
 import { Post } from '../post';
-import Image from 'next/image';
 import { ContactSection } from '../contact-section';
+import { Blog } from '../blog';
 
-const SectionFive = ({ randomPosts, contactSectionText, contactSectionButtonText }) => {
+const SectionFive = ({ randomPosts, contactSectionText, contactSectionButtonText, blogs }) => {
   return <div className={styles.sectionFive}>
     <div className={styles.contentTop}>
       <div className={styles.row}>
@@ -22,42 +19,11 @@ const SectionFive = ({ randomPosts, contactSectionText, contactSectionButtonText
     <div className={styles.contentBottom}>
       <h3 className={styles.title}>From the blog</h3>
       <div className={styles.blogsContainer}>
-        <div className={styles.blogItem}>
-          <div className={styles.imageContainer}>
-            <Image
-              src={pict3}
-              alt="Image"
-              width={327}
-              height={192}
-              layout="responsive"
-            />
-          </div>
-          <div className={styles.imageText}>Smart Contract 101</div>
-        </div>
-        <div className={styles.blogItem}>
-          <div className={styles.imageContainer}>
-            <Image
-              src={pict4}
-              alt="Image"
-              width={327}
-              height={192}
-              layout="responsive"
-            />
-          </div>
-          <div className={styles.imageText}>Check out the latest launch</div>
-        </div>
-        <div className={styles.blogItem}>
-          <div className={styles.imageContainer}>
-            <Image
-              src={pict5}
-              alt="Image"
-              width={327}
-              height={192}
-              layout="responsive"
-            />
-          </div>
-          <div className={styles.imageText}>Artist profile: SmokeStacks</div>
-        </div>
+        {
+          blogs.map(blog => {
+            return <Blog key={blog.id} blog={blog} />
+          })
+        }
       </div>
     </div>
     <div className={styles.contactContainer}>

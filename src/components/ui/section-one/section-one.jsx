@@ -1,13 +1,15 @@
 import styles from './section-one.module.scss'
 import arrow from './images/ArrowDown.png'
 import Image from 'next/image';
+import { MOBILE_SCREEN } from '../../../constants';
 
 const SectionOne = () => {
 
     const scrollToSectionTwo = () => {
         const target = document.getElementById('our-services-section');
         if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
+            const isMobile = window.innerWidth <= MOBILE_SCREEN;
+            target.scrollIntoView({ behavior: 'smooth', block: isMobile ? 'start' : 'end' });
         }
     };
 

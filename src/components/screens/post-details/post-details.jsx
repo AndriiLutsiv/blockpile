@@ -7,16 +7,17 @@ import { ContactSection } from '@/components/ui/contact-section';
 
 const hardcodedText = 'Please add content';
 const PostDetails = ({ postDetailsData, contactSectionText, contactSectionButtonText, randomPosts }) => {
+
     return (
-        <Layout title='Blog' yoastSEO={postDetailsData.yoast_head}>
+        <Layout title='Case' yoastSEO={postDetailsData.yoast_head}>
             <div className={styles.postDetails}>
                 <div className={styles.container}>
                     <div className={styles.categoryContainer}>
-                        <span className={styles.categoryItem}>NFT</span>
+                        <span className={styles.categoryItem}>{postDetailsData.categoryName || hardcodedText}</span>
                         &nbsp;
                         <span className={styles.categoryItem}>Project</span>
                         <span> - </span>
-                        <span className={styles.categoryItem}>LUX</span>
+                        <span className={styles.categoryItem}>{postDetailsData.title.rendered || hardcodedText}</span>
                     </div>
                     <div className={styles.topContent}>
                         <div className={styles.contentContainer}>

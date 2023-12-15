@@ -1,0 +1,1 @@
+export const MOBILE_SCREEN = 768; // screen width is 768px or less
