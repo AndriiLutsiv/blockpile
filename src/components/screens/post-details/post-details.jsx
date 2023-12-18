@@ -33,7 +33,7 @@ const PostDetails = ({ postDetailsData, contactSectionText, contactSectionButton
                                 )}
                                 {postDetailsData?.acf.topsectionlink2 && postDetailsData?.acf.topsectionlink3 && ' / '}
                                 {postDetailsData?.acf.topsectionlink3 && (
-                                    <a href={postDetailsData.acf.topsectionlink4} target="_blank" rel="noopener noreferrer">Github</a>
+                                    <a href={postDetailsData.acf.topsectionlink3} target="_blank" rel="noopener noreferrer">Github</a>
                                 )}
                             </div>
                             <div className={styles.technologiesUsed}>
@@ -77,7 +77,7 @@ const PostDetails = ({ postDetailsData, contactSectionText, contactSectionButton
                         <div className={styles.details}>
                             <div className={styles.row}>
                                 <h3 className={styles.title}>Featured Work</h3>
-                                <Link href={`/jobs`}>View all &gt;</Link>
+                                <Link href={`/jobs?page=1&category=0`}>View all &gt;</Link>
                             </div>
                             <div className={styles.postsContainer}>
                                 {randomPosts.map(post => <Post key={post.id} post={post} />)}

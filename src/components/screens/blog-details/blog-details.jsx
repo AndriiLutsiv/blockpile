@@ -32,7 +32,7 @@ const BlogDetails = ({ blogDetailsData, contactSectionText, contactSectionButton
                                 )}
                                 {blogDetailsData?.acf.topsectionlink2 && blogDetailsData?.acf.topsectionlink3 && ' / '}
                                 {blogDetailsData?.acf.topsectionlink3 && (
-                                    <a href={blogDetailsData.acf.topsectionlink4} target="_blank" rel="noopener noreferrer">Github</a>
+                                    <a href={blogDetailsData.acf.topsectionlink3} target="_blank" rel="noopener noreferrer">Github</a>
                                 )}
                             </div>
                             <div className={styles.technologiesUsed}>
