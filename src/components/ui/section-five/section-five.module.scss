@@ -1,7 +1,6 @@
 .sectionFive {
     width: 100%;
 
-
     .contentTop {
         background: #f6f4f1;
         padding-top: 150px;
@@ -112,10 +111,6 @@
             margin: 0 auto 41px auto;
             padding: 0 20px;
         }
-
-        .imageContainer {
-            padding: 0 20px;
-        }
     }
 
     .blogsContainer {
@@ -129,28 +124,7 @@
         @media (max-width: 750px) {
             flex-direction: column;
             justify-content: center;
-
         }
-    }
-
-    .blogItem {
-        width: 100%;
-        max-width: 33%;
-
-        & .imageContainer {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 750px) {
-            max-width: 100%;
-
-        }
-    }
-
-    .imageText {
-        padding: 0 20px 20px;
-        font-size: 18px;
     }
 
     .contactContainer {

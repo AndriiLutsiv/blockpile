@@ -4,6 +4,7 @@ import logo1 from './images/Logo.png'
 import Link from "next/link";
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { MOBILE_SCREEN } from '../../../constants';
 
 const Footer = () => {
     const { pathname, query, push } = useRouter();
@@ -18,7 +19,8 @@ const Footer = () => {
     const scrollToSection = (sectionId) => {
         const target = document.getElementById(sectionId);
         if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            const isMobile = window.innerWidth <= MOBILE_SCREEN;
+            target.scrollIntoView({ behavior: 'smooth', block: isMobile ? 'start' : 'end' });  // Scrolls to the top on mobile devices
         } else {
             push(`/?scrollTo=${sectionId}`);
         }
@@ -29,7 +31,8 @@ const Footer = () => {
         if (scrollTo) {
             const target = document.getElementById(scrollTo);
             if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'end' });
+                const isMobile = window.innerWidth <= MOBILE_SCREEN;
+                target.scrollIntoView({ behavior: 'smooth', block: isMobile ? 'start' : 'end' });  // Scrolls to the top on mobile devices
             }
         }
     }, [query, pathname]);

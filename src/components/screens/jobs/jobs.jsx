@@ -6,6 +6,8 @@ import { useRouter } from 'next/router';
 import { ContactSection } from '@/components/ui/contact-section';
 import classNames from 'classnames';
 import ReactPaginate from 'react-paginate';
+import { createPublicClient, http } from 'viem'
+import { mainnet } from 'viem/chains'
 
 const CategoryButtons = ({ categories, onCategoryClick }) => {
     const { query } = useRouter();
@@ -95,6 +97,18 @@ const Jobs = ({ posts, totalPages, categories, category, topSectionText, bottomS
             },
         }, undefined, { scroll: false });
     };
+
+    useEffect(() => {
+        (async () => {
+            const client = createPublicClient({
+                chain: mainnet,
+                transport: http(),
+            });
+
+            const blockNumber = await client.getBlockNumber();
+            console.log('blockNumber', blockNumber);
+        })()
+    }, []);
 
     return (
         <Layout title='Case Studies' yoastSEO={yoastSEO}>

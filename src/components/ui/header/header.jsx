@@ -5,6 +5,7 @@ import styles from './header.module.scss';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
 import Link from "next/link";
+import { MOBILE_SCREEN } from '../../../constants';
 
 const Header = () => {
   const { pathname, query, push } = useRouter();
@@ -22,7 +23,8 @@ const Header = () => {
   const scrollToSection = (sectionId) => {
     const target = document.getElementById(sectionId);
     if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      const isMobile = window.innerWidth <= MOBILE_SCREEN;
+      target.scrollIntoView({ behavior: 'smooth', block: isMobile ? 'start' : 'end' }); // Scrolls to the top on mobile devices
     } else {
       push(`/?scrollTo=${sectionId}`);
     }
@@ -33,7 +35,8 @@ const Header = () => {
     if (scrollTo) {
       const target = document.getElementById(scrollTo);
       if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        const isMobile = window.innerWidth <= MOBILE_SCREEN;
+        target.scrollIntoView({ behavior: 'smooth', block: isMobile ? 'start' : 'end' }); // Scrolls to the top on mobile devices
       }
     }
   }, [query, pathname]);

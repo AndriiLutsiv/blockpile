@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import  parse  from 'html-react-parser';
+import parse from 'html-react-parser';
 
 const getTitle = (title) => `${title} | Default Title`;
 
@@ -7,7 +7,6 @@ const Meta = ({ title, description, yoastSEO, children }) => {
 
     return <>
         <Head>
-            
             {description &&
                 <>
                     <meta name='description' content={description} />
