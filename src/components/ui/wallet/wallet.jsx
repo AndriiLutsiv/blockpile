@@ -1,7 +1,7 @@
 import { useAccount, useBalance } from 'wagmi';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
-import styles from './Wallet.module.scss';
-import { Layout } from '@/components/layout';
+import styles from './wallet.module.scss';
+import { Layout } from '../../layout';
 
 export default function Wallet() {
     const { address, isConnected } = useAccount();
