@@ -16,8 +16,8 @@ const SectionFive = ({ randomPosts, contactSectionText, contactSectionButtonText
         {randomPosts.map(post => <Post key={post.id} post={post} />)}
       </div>
     </div>
-    <div className={styles.contentBottom}>
-      <h3 className={styles.title}>From the blog</h3>
+    <div id='blogs-desktop' className={styles.contentBottom}>
+      <h3 id='blogs-mobile' className={styles.title}>From the blog</h3>
       <div className={styles.blogsContainer}>
         {
           blogs.map(blog => {

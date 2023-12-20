@@ -7,7 +7,7 @@ import { SectionFour } from '@/components/ui/section-four';
 import { SectionFive } from '@/components/ui/section-five';
 
 const Home = ({ testimonials, randomPosts, contactSection, contactSectionText, contactSectionButtonText, blogs }) => {
-    return <Layout title='Home' description='Some description for seo'>
+    return <Layout title='blockpile' description='Some description for seo'>
         <div className={styles.home}>
             <SectionOne />
             <SectionTwo />

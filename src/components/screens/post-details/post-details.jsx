@@ -9,7 +9,7 @@ const hardcodedText = 'Please add content';
 const PostDetails = ({ postDetailsData, contactSectionText, contactSectionButtonText, randomPosts }) => {
 
     return (
-        <Layout title='Case' yoastSEO={postDetailsData.yoast_head}>
+        <Layout title={`blockpile - ${postDetailsData.title.rendered}`} yoastSEO={postDetailsData.yoast_head}>
             <div className={styles.postDetails}>
                 <div className={styles.container}>
                     <div className={styles.categoryContainer}>

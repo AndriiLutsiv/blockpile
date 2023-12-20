@@ -29,7 +29,7 @@ const Header = () => {
       push(`/?scrollTo=${sectionId}`);
     }
   };
- 
+
   useEffect(() => {
     const { scrollTo } = query;
     if (scrollTo) {
@@ -62,6 +62,12 @@ const Header = () => {
             className={styles.headerItem}
           >
             Case Studies
+          </div>
+          <div
+            onClick={() => window.innerWidth <= MOBILE_SCREEN ? scrollToSection('blogs-mobile') : scrollToSection('blogs-desktop')}
+            className={styles.headerItem}
+          >
+            Blog
           </div>
           <div
             onClick={() => scrollToSection('testimonials-section')}

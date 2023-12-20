@@ -14,7 +14,7 @@ export default function BlogsPage({ blogDetailsData, contactSection, randomBlogs
 
   return (
     <BlogDetails
-    blogDetailsData={blogDetailsData}
+      blogDetailsData={blogDetailsData}
       contactSectionText={contactSectionText}
       contactSectionButtonText={contactSectionButtonText}
       randomBlogs={randomBlogs}
