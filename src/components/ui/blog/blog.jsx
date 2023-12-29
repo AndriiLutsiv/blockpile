@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import styles from './blog.module.scss';
 import Link from "next/link";
+import classNames from 'classnames';
 
-const Blog = ({blog}) => {
-  return <Link className={styles.blog} href={`/blogs/${blog.id}`}>
+const Blog = ({ blog, isBlogsPage }) => {
+  return <Link className={classNames(styles.blog, { [styles.isBlogsPage]: isBlogsPage })} href={`/blogs/${blog.id}`}>
     <div className={styles.imageContainer}>
       <Image
         src={blog.featuredImage || ''}

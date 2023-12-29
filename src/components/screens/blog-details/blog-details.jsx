@@ -42,7 +42,7 @@ const BlogDetails = ({ blogDetailsData, contactSectionText, contactSectionButton
                         <div className={styles.details}>
                             <div className={styles.row}>
                                 <h3 className={styles.title}>Featured Work</h3>
-                                <Link href={`/`}>View all &gt;</Link>
+                                <Link href={`/blogs?page=1`}>View all &gt;</Link>
                             </div>
                             <div className={styles.blogsContainer}>
                                 {randomBlogs.map(blog => <Blog key={blog.id} blog={blog} />)}

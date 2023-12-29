@@ -1,10 +1,9 @@
-import { Jobs } from "@/components/screens/jobs";
+import { Blogs } from "@/components/screens/blogs";
 import { parse } from 'node-html-parser';
 import { fetchSectionContent } from "../utils/fetchSectionContent";
-import { getCategories } from '../utils/getCategories';
-import { processPosts } from "../utils/processPosts";
+import { processBlogs } from "../utils/processBlogs";
 
-export default function JobsPage({ posts, categories, totalPages, category, topSectionContent, bottomSectionContent, yoastSEO, error }) {
+export default function BlogsPage({ blogs, totalPages, topSectionContent, bottomSectionContent, yoastSEO, error }) {
 
     const topSectionParsed = parse(topSectionContent.content.rendered);
     const topSectionText = topSectionParsed.querySelector('p')?.innerText;
@@ -18,11 +17,9 @@ export default function JobsPage({ posts, categories, totalPages, category, topS
     }
 
     return (
-        <Jobs
-            posts={posts}
+        <Blogs
+            blogs={blogs}
             totalPages={totalPages}
-            categories={categories}
-            category={category}
             topSectionText={topSectionText}
             bottomSectionText={bottomSectionText}
             bottomSectionButtonText={bottomSectionButtonText}
@@ -34,42 +31,30 @@ export default function JobsPage({ posts, categories, totalPages, category, topS
 export async function getServerSideProps({ query }) {
     try {
         const page = parseInt(query.page) || 1;
-        const category = query.category ? parseInt(query.category) : null; 
-        const perPage = 6;
-
-        // Fetch posts for the current page
-        let postsRes;
-        if (category) {
-            postsRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/posts?_embed&per_page=${perPage}&page=${page}&categories=${category}`);
-        } else {
-            postsRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/posts?_embed&per_page=${perPage}&page=${page}`);
-        }
+        const perPage = 1;
+        // Fetch blogs for the current page
+        const blogsRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/blog?_embed&per_page=${perPage}&page=${page}`);;
+  
+        const blogs = await blogsRes.json();
         
-        const posts = await postsRes.json();
-        
-        // Get total number of posts to calculate total pages
-        const total = postsRes.headers.get('X-WP-Total');
+        // Get total number of blogs to calculate total pages
+        const total = blogsRes.headers.get('X-WP-Total');
         const totalPages = Math.ceil(total / perPage);
 
-        const categoryMap = await getCategories();
-
-        const processedPosts = processPosts(posts, categoryMap);
-        
+        const processedBlogs = processBlogs(blogs);
 
         const topSectionContent = await fetchSectionContent('top_heading');
         const bottomSectionContent = await fetchSectionContent('contact_section');
 
-        // Fetch SEO data for 'jobs' page
-        const jobsPageRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/pages?slug=jobs`);
-        const jobsPage = await jobsPageRes.json();
-        const yoastSEO = jobsPage[0].yoast_head;
+        // Fetch SEO data for 'blogs' page
+        const blogsPageRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/pages?slug=blogs`);
+        const blogsPage = await blogsPageRes.json();
+        const yoastSEO = blogsPage[0].yoast_head;
 
         return {
             props: {
-                posts: processedPosts,
+                blogs: processedBlogs,
                 totalPages,
-                categories: categoryMap,
-                category,
                 topSectionContent,
                 bottomSectionContent,
                 yoastSEO

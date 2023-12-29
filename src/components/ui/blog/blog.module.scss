@@ -5,6 +5,10 @@
     color: black;
     display: block;
 
+    &.isBlogsPage {
+        max-width: 100%;
+    }
+
     @media (max-width: 750px) {
         max-width: 100%;
     }
