@@ -21,7 +21,7 @@ const PaginationLinks = ({ totalPages, currentPage }) => {
             // Check if the device is a tablet or smaller
             if (window.matchMedia("(max-width: 1072px)").matches) {
                 // Scroll to the top of the categories section
-                const categoriesTop = document.querySelector('.blogs-container')?.offsetTop;
+                const categoriesTop = document.getElementById('blogs')?.offsetTop;
                 window.scrollTo({
                     top: categoriesTop || 0,
                     behavior: 'smooth'
@@ -59,9 +59,9 @@ const Blogs = ({ blogs, totalPages, topSectionText, bottomSectionText, bottomSec
 
     return (
         <Layout title='Blogs' yoastSEO={yoastSEO}>
-            <div className={styles.blogs}>
+            <div id='blogs' className={styles.blogs}>
                 <h1 className={styles.heading}>{topSectionText}</h1>
-                <div id='blogs-container' className={styles.blogsContainer}>
+                <div  className={styles.blogsContainer}>
                     {blogs.map(blog => <Blog key={blog.id} blog={blog} isBlogsPage />)}
                 </div>
                 <PaginationLinks totalPages={totalPages} currentPage={currentPage} />

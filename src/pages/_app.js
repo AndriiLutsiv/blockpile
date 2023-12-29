@@ -1,10 +1,11 @@
+// The code related to web3 is commented
+
 import '@rainbow-me/rainbowkit/styles.css';
 import '@/styles/globals.css'
-
-import {
-  getDefaultWallets,
-  RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+// import {
+//   getDefaultWallets,
+//   RainbowKitProvider,
+// } from '@rainbow-me/rainbowkit';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import {
   mainnet,
@@ -25,25 +26,25 @@ const { chains, publicClient } = configureChains(
   ]
 );
 
-const { connectors } = getDefaultWallets({
-  appName: 'BlockPile',
-  projectId: `${process.env.WEB3_PROJECT_ID}`,
-  chains
-});
+// const { connectors } = getDefaultWallets({
+//   appName: 'BlockPile',
+//   projectId: `${process.env.WEB3_PROJECT_ID}`,
+//   chains
+// });
 
-const wagmiConfig = createConfig({
-  autoConnect: true,
-  connectors,
-  publicClient
-})
+// const wagmiConfig = createConfig({
+//   autoConnect: true,
+//   connectors,
+//   publicClient
+// })
 
 function MyApp({ Component, pageProps }) {
   return (
-    <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider chains={chains}>
+    // <WagmiConfig config={wagmiConfig}>
+    //   <RainbowKitProvider chains={chains}>
         <Component {...pageProps} />
-      </RainbowKitProvider>
-    </WagmiConfig>
+    //   </RainbowKitProvider>
+    // </WagmiConfig>
   );
 }
 

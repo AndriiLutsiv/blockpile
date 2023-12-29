@@ -31,7 +31,7 @@ export default function BlogsPage({ blogs, totalPages, topSectionContent, bottom
 export async function getServerSideProps({ query }) {
     try {
         const page = parseInt(query.page) || 1;
-        const perPage = 1;
+        const perPage = 6;
         // Fetch blogs for the current page
         const blogsRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/blog?_embed&per_page=${perPage}&page=${page}`);;
   

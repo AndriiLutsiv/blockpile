@@ -47,7 +47,7 @@ const PaginationLinks = ({ totalPages, category, currentPage }) => {
             // Check if the device is a tablet or smaller
             if (window.matchMedia("(max-width: 1072px)").matches) {
                 // Scroll to the top of the categories section
-                const categoriesTop = document.querySelector('.categoryButtons')?.offsetTop;
+                const categoriesTop = document.getElementById('jobs')?.offsetTop;
                 window.scrollTo({
                     top: categoriesTop || 0,
                     behavior: 'smooth'
@@ -98,7 +98,7 @@ const Jobs = ({ posts, totalPages, categories, category, topSectionText, bottomS
 
     return (
         <Layout title='Case Studies' yoastSEO={yoastSEO}>
-            <div className={styles.jobs}>
+            <div id='jobs' className={styles.jobs}>
                 <h1 className={styles.heading}>{topSectionText}</h1>
                 <CategoryButtons categories={categories} onCategoryClick={handleCategoryClick} />
                 <div className={styles.postsContainer}>
