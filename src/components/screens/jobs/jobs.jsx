@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Post } from '@/components/ui/post';
 import styles from './jobs.module.scss';
 import { Layout } from '@/components/layout';
@@ -34,9 +34,10 @@ const createPaginationLink = (page, category) => ({
     pathname: '/jobs',
     query: {
         page,
-        ...{ category }
+        category,
     },
 });
+
 
 const PaginationLinks = ({ totalPages, category, currentPage }) => {
     const { push } = useRouter();

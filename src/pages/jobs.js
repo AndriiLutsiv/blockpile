@@ -1,15 +1,17 @@
 import { Jobs } from "@/components/screens/jobs";
 import { parse } from 'node-html-parser';
-import { fetchSectionContent } from "../utils/fetchSectionContent";
 import { getCategories } from '../utils/getCategories';
 import { processPosts } from "../utils/processPosts";
+import postsData  from '../data/posts.json';
+import topSectionData from '../data/topSection.json';
+import bottmSectionData from '../data/bottomSection.json';
+import jobsSeoData from '../data/jobsSeo.json';
 
-export default function JobsPage({ posts, categories, totalPages, category, topSectionContent, bottomSectionContent, yoastSEO, error }) {
-
-    const topSectionParsed = parse(topSectionContent.content.rendered);
+export default function JobsPage({ posts, categories, totalPages, category, yoastSEO, error }) {
+    const topSectionParsed = parse(topSectionData.content.rendered);
     const topSectionText = topSectionParsed.querySelector('p')?.innerText;
 
-    const bottomSectionParsed = parse(bottomSectionContent.content.rendered);
+    const bottomSectionParsed = parse(bottmSectionData.content.rendered);
     const bottomSectionText = bottomSectionParsed.querySelector('p')?.innerText;
     const bottomSectionButtonText = bottomSectionParsed.querySelector('.wp-block-button__link')?.innerText;
 
@@ -33,36 +35,32 @@ export default function JobsPage({ posts, categories, totalPages, category, topS
 
 export async function getServerSideProps({ query }) {
     try {
-        const page = parseInt(query.page) || 1;
         const category = query.category ? parseInt(query.category) : null; 
         const perPage = 6;
+        const page = query.page ? parseInt(query.page) : 1;
 
-        // Fetch posts for the current page
-        let postsRes;
+        let posts;
         if (category) {
-            postsRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/posts?_embed&per_page=${perPage}&page=${page}&categories=${category}`);
+            posts = postsData.filter(post => post.categories.includes(category));
         } else {
-            postsRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/posts?_embed&per_page=${perPage}&page=${page}`);
+            posts = postsData;
         }
-        
-        const posts = await postsRes.json();
-        
-        // Get total number of posts to calculate total pages
-        const total = postsRes.headers.get('X-WP-Total');
-        const totalPages = Math.ceil(total / perPage);
+
+        // Calculate the starting index and ending index for the current page
+        const startIndex = (page - 1) * perPage;
+        const endIndex = startIndex + perPage;
+
+        // Get the posts for the current page
+        const postsForPage = posts.slice(startIndex, endIndex);
+
+        // Get total number of posts after filtering by category
+        const totalPages = Math.ceil(posts.length / perPage);
 
         const categoryMap = await getCategories();
 
-        const processedPosts = processPosts(posts, categoryMap);
-        
+        const processedPosts = processPosts(postsForPage, categoryMap);
 
-        const topSectionContent = await fetchSectionContent('top_heading');
-        const bottomSectionContent = await fetchSectionContent('contact_section');
-
-        // Fetch SEO data for 'jobs' page
-        const jobsPageRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/pages?slug=jobs`);
-        const jobsPage = await jobsPageRes.json();
-        const yoastSEO = jobsPage[0].yoast_head;
+        const yoastSEO = jobsSeoData[0].yoast_head;
 
         return {
             props: {
@@ -70,9 +68,7 @@ export async function getServerSideProps({ query }) {
                 totalPages,
                 categories: categoryMap,
                 category,
-                topSectionContent,
-                bottomSectionContent,
-                yoastSEO
+                yoastSEO,
             },
         };
     } catch (error) {

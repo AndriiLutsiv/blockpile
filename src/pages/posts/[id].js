@@ -1,11 +1,13 @@
 import { PostDetails } from "../../components/screens/post-details";
-import { fetchSectionContent } from '../../utils/fetchSectionContent';
-import { fetchRandomBatchOfPosts } from '../../utils/fetchRandomBatchOfPosts';
+import { getRandomBatchOfPosts } from '../../utils/getRandomBatchOfPosts';
 import { parse } from 'node-html-parser';
+import bottomSectionData from '../../data/bottomSection.json';
+import postsData from '../../data/posts.json';
+import categoriesData from '../../data/categories.json';
 
-export default function PostDetailsPage({ postDetailsData, contactSection, randomPosts, error }) {
+export default function PostDetailsPage({ postDetailsData, randomPosts, error }) {
 
-  const contactSectionParsed = parse(contactSection.content.rendered);
+  const contactSectionParsed = parse(bottomSectionData.content.rendered);
   const contactSectionText = contactSectionParsed.querySelector('p')?.innerText;
   const contactSectionButtonText = contactSectionParsed.querySelector('.wp-block-button__link')?.innerText;
 
@@ -27,43 +29,22 @@ export async function getServerSideProps(context) {
   const { id } = context.params; // Get the post ID from the URL
 
   try {
-    // Fetch post by ID
-    const postRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/posts/${id}?_embed`);
-    const postData = await postRes.json();
+    const postData = postsData.find(blog => blog.id === Number(id));
 
-    // Fetch post category name
-    const categoryId = postData.categories[0] || undefined;
-    const categoryRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/categories/${categoryId}`);
-    const categoryData = await categoryRes.json();
+    const categoryData = categoriesData.find(category => category.id === postData.categories[0]);
 
-    // Fetch random posts
-    const randomPostsBatch = await fetchRandomBatchOfPosts(6);
-    // Fetch contact section
-    const contactSection = await fetchSectionContent('contact_section');
+    const randomPostsBatch = await getRandomBatchOfPosts();
 
-    // Fetch images by ID
-    const topImageRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/media/${postData.acf.topimage}`);
-    const topImageData = await topImageRes.json();
-
-    const middleImageCoverRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/media/${postData.acf.middleimagecover}`);
-    const middleImageCoverData = await middleImageCoverRes.json();
-
-    const middleTextImageRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/media/${postData.acf.middletextimage}`);
-    const middleTextImageData = await middleTextImageRes.json();
 
     const postDetailsData = {
       ...postData,
       categoryName: categoryData.name,
-      topImageData,
-      middleImageCoverData,
-      middleTextImageData,
     };
 
     return {
       props: {
         postDetailsData,
         randomPosts: randomPostsBatch,
-        contactSection
       },
     };
   } catch (error) {
@@ -71,7 +52,6 @@ export async function getServerSideProps(context) {
     return {
       props: {
         postDetailsData: null,
-        contactSection: null,
         error: "An error occurred while loading the page."
       },
     };

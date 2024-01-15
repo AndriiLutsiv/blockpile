@@ -1,14 +1,16 @@
 import { Blogs } from "@/components/screens/blogs";
 import { parse } from 'node-html-parser';
-import { fetchSectionContent } from "../utils/fetchSectionContent";
 import { processBlogs } from "../utils/processBlogs";
+import topSectionData from '../data/topSection.json';
+import bottomSectionData from '../data/bottomSection.json';
+import blogsSeoData from '../data/blogsSeo.json';
+import blogsData from '../data/blogs.json';
 
-export default function BlogsPage({ blogs, totalPages, topSectionContent, bottomSectionContent, yoastSEO, error }) {
-
-    const topSectionParsed = parse(topSectionContent.content.rendered);
+export default function BlogsPage({ blogs, totalPages, yoastSEO, error }) {
+    const topSectionParsed = parse(topSectionData.content.rendered);
     const topSectionText = topSectionParsed.querySelector('p')?.innerText;
 
-    const bottomSectionParsed = parse(bottomSectionContent.content.rendered);
+    const bottomSectionParsed = parse(bottomSectionData.content.rendered);
     const bottomSectionText = bottomSectionParsed.querySelector('p')?.innerText;
     const bottomSectionButtonText = bottomSectionParsed.querySelector('.wp-block-button__link')?.innerText;
 
@@ -30,41 +32,33 @@ export default function BlogsPage({ blogs, totalPages, topSectionContent, bottom
 
 export async function getServerSideProps({ query }) {
     try {
+        const perPage = 3; // Set the number of blogs to display per page
         const page = parseInt(query.page) || 1;
-        const perPage = 6;
-        // Fetch blogs for the current page
-        const blogsRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/blog?_embed&per_page=${perPage}&page=${page}`);;
-  
-        const blogs = await blogsRes.json();
-        
-        // Get total number of blogs to calculate total pages
-        const total = blogsRes.headers.get('X-WP-Total');
-        const totalPages = Math.ceil(total / perPage);
+
+        const startIndex = (page - 1) * perPage;
+        const endIndex = startIndex + perPage;
+
+        const blogs = blogsData.slice(startIndex, endIndex);
+
+        // Get total number of blogs
+        const totalPages = Math.ceil(blogsData.length / perPage);
 
         const processedBlogs = processBlogs(blogs);
 
-        const topSectionContent = await fetchSectionContent('top_heading');
-        const bottomSectionContent = await fetchSectionContent('contact_section');
-
-        // Fetch SEO data for 'blogs' page
-        const blogsPageRes = await fetch(`${process.env.WP_REST_URL}/wp-json/wp/v2/pages?slug=blogs`);
-        const blogsPage = await blogsPageRes.json();
-        const yoastSEO = blogsPage[0].yoast_head;
+        const yoastSEO = blogsSeoData[0].yoast_head;
 
         return {
             props: {
                 blogs: processedBlogs,
                 totalPages,
-                topSectionContent,
-                bottomSectionContent,
-                yoastSEO
+                yoastSEO,
             },
         };
     } catch (error) {
         console.error("Error in getServerSideProps: ", error);
         return {
             props: {
-                error: "An error occurred while loading the page."
+                error: "An error occurred while loading the page.",
             },
         };
     }

@@ -17,15 +17,15 @@ const BlogDetails = ({ blogDetailsData, contactSectionText, contactSectionButton
                             <p className={styles.subTitle}>{blogDetailsData?.acf?.topsectiondescription || hardcodedText}</p>
                         </div>
                         <div className={styles.imgContainer}>
-                            <Image width={800} height={560} src={blogDetailsData?.topImageData.source_url || ''} alt="picture" layout="responsive" />
+                            <Image width={800} height={560} src={blogDetailsData?.acf?.topimage} alt="picture" layout="responsive" />
                         </div>
                     </div>
                     <div className={styles.videoContent}>
-                        <Image width={1360} height={900} src={blogDetailsData?.middleImageCoverData.source_url || ''} alt="picture" layout="responsive" />
+                        <Image width={1360} height={900} src={blogDetailsData?.acf?.middleimagecover} alt="picture" layout="responsive" />
                     </div>
                     <div className={styles.middleContent}>
                         <div className={styles.imageContainer}>
-                            <Image width={720} height={500} src={blogDetailsData?.middleTextImageData.source_url || ''} alt="picture" />
+                            <Image width={720} height={500} src={blogDetailsData?.acf?.middletextimage} alt="picture" />
                         </div>
                         <div className={styles.textContent}>
                             <h2 className={styles.title}>{blogDetailsData?.acf?.middletexttitle || hardcodedText}</h2>

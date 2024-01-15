@@ -45,15 +45,15 @@ const PostDetails = ({ postDetailsData, contactSectionText, contactSectionButton
                             </div>
                         </div>
                         <div className={styles.imgContainer}>
-                            <Image width={800} height={560} src={postDetailsData?.topImageData.source_url || ''} alt="picture" layout="responsive" />
+                            <Image width={800} height={560} src={postDetailsData?.acf?.topimage} alt="picture" layout="responsive" />
                         </div>
                     </div>
                     <div className={styles.videoContent}>
-                        <Image width={1360} height={900} src={postDetailsData?.middleImageCoverData.source_url || ''} alt="picture" layout="responsive" />
+                        <Image width={1360} height={900} src={postDetailsData?.acf?.middleimagecover} alt="picture" layout="responsive" />
                     </div>
                     <div className={styles.middleContent}>
                         <div className={styles.imageContainer}>
-                            <Image width={720} height={500} src={postDetailsData?.middleTextImageData.source_url || ''} alt="picture" />
+                            <Image width={720} height={500} src={postDetailsData?.acf?.middletextimage} alt="picture" />
                         </div>
                         <div className={styles.textContent}>
                             <h2 className={styles.title}>{postDetailsData?.acf?.middletexttitle || hardcodedText}</h2>

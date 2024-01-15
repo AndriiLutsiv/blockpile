@@ -1,0 +1,810 @@
+[
+    {
+        "id": 131,
+        "date": "2023-12-15T12:01:12",
+        "date_gmt": "2023-12-15T12:01:12",
+        "guid": {
+            "rendered": "http://blockpile.local/?post_type=blog&#038;p=131"
+        },
+        "modified": "2023-12-22T10:48:47",
+        "modified_gmt": "2023-12-22T10:48:47",
+        "slug": "artist-profile-smokestacks",
+        "status": "publish",
+        "type": "blog",
+        "link": "https://arvotest.space/blog/artist-profile-smokestacks/",
+        "title": {
+            "rendered": "Artist profile: SmokeStacks2"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "featured_media": 133,
+        "template": "",
+        "acf": {
+            "topsectionheading": "Launching a photography collection",
+            "topsectiondescription": "A collection of 4 NFTs by Daniel Koeth with different distribution mechanisms and rarities. Completed in 2022.",
+            "topsectionlink1": "https://www.google.com/",
+            "topsectionlink2": "https://opensea.io/",
+            "topsectionlink3": "https://github.com/",
+            "topsectiontechheading": "Scope of work",
+            "toptech1": "Burn/Own to mint contracts",
+            "toptech2": "Truffle",
+            "toptech3": "React",
+            "toptech4": "Web3.js",
+            "topimage": "/media/blog1.png",
+            "middleimagecover": "/media/blog1.png",
+            "middletexttitle": "4 unique items, 1 video, editions all rolled into one contract",
+            "middletextdescription": "As these things good, Daniel was referred to use on Twitter and is a talented SuperRare artist and photographer that needed assistance with how best to deliver the launch to his collector base.  Combining different distribution mechanisms and rarities posed a challenge that we willingly accepted.  One of the main utilities was a lifetime allowlist for the token owner which is an interesting dynamic.",
+            "middletextimage": "/media/blog1.png",
+            "middlequotetext": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.” Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit",
+            "middletestimonialtext": "f-1 collective"
+        },
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Artist profile: SmokeStacks2 - blockpile</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://arvotest.space/blog/artist-profile-smokestacks/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Artist profile: SmokeStacks2 - blockpile\" />\n<meta property=\"og:url\" content=\"https://arvotest.space/blog/artist-profile-smokestacks/\" />\n<meta property=\"og:site_name\" content=\"blockpile\" />\n<meta property=\"article:modified_time\" content=\"2023-12-22T10:48:47+00:00\" />\n<meta property=\"og:image\" content=\"https://arvotest.space/wp-content/uploads/2023/12/birds.png\" />\n\t<meta property=\"og:image:width\" content=\"769\" />\n\t<meta property=\"og:image:height\" content=\"450\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://arvotest.space/blog/artist-profile-smokestacks/\",\"url\":\"https://arvotest.space/blog/artist-profile-smokestacks/\",\"name\":\"Artist profile: SmokeStacks2 - blockpile\",\"isPartOf\":{\"@id\":\"https://arvotest.space/#website\"},\"datePublished\":\"2023-12-15T12:01:12+00:00\",\"dateModified\":\"2023-12-22T10:48:47+00:00\",\"breadcrumb\":{\"@id\":\"https://arvotest.space/blog/artist-profile-smokestacks/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://arvotest.space/blog/artist-profile-smokestacks/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://arvotest.space/blog/artist-profile-smokestacks/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://arvotest.space/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Artist profile: SmokeStacks2\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://arvotest.space/#website\",\"url\":\"https://arvotest.space/\",\"name\":\"blockpile\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://arvotest.space/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head_json": {
+            "title": "Artist profile: SmokeStacks2 - blockpile",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "https://arvotest.space/blog/artist-profile-smokestacks/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "Artist profile: SmokeStacks2 - blockpile",
+            "og_url": "https://arvotest.space/blog/artist-profile-smokestacks/",
+            "og_site_name": "blockpile",
+            "article_modified_time": "2023-12-22T10:48:47+00:00",
+            "og_image": [
+                {
+                    "width": 769,
+                    "height": 450,
+                    "url": "https://arvotest.space/wp-content/uploads/2023/12/birds.png",
+                    "type": "image/png"
+                }
+            ],
+            "twitter_card": "summary_large_image",
+            "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://arvotest.space/blog/artist-profile-smokestacks/",
+                        "url": "https://arvotest.space/blog/artist-profile-smokestacks/",
+                        "name": "Artist profile: SmokeStacks2 - blockpile",
+                        "isPartOf": {
+                            "@id": "https://arvotest.space/#website"
+                        },
+                        "datePublished": "2023-12-15T12:01:12+00:00",
+                        "dateModified": "2023-12-22T10:48:47+00:00",
+                        "breadcrumb": {
+                            "@id": "https://arvotest.space/blog/artist-profile-smokestacks/#breadcrumb"
+                        },
+                        "inLanguage": "en-US",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://arvotest.space/blog/artist-profile-smokestacks/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://arvotest.space/blog/artist-profile-smokestacks/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://arvotest.space/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Artist profile: SmokeStacks2"
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://arvotest.space/#website",
+                        "url": "https://arvotest.space/",
+                        "name": "blockpile",
+                        "description": "",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "https://arvotest.space/?s={search_term_string}"
+                                },
+                                "query-input": "required name=search_term_string"
+                            }
+                        ],
+                        "inLanguage": "en-US"
+                    }
+                ]
+            }
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https://arvotest.space/wp-json/wp/v2/blog/131"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://arvotest.space/wp-json/wp/v2/blog"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://arvotest.space/wp-json/wp/v2/types/blog"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://arvotest.space/wp-json/wp/v2/media/133"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://arvotest.space/wp-json/wp/v2/media?parent=131"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        },
+        "_embedded": {
+            "wp:featuredmedia": [
+                {
+                    "id": 133,
+                    "date": "2023-12-15T12:07:04",
+                    "slug": "birds",
+                    "type": "attachment",
+                    "link": "https://arvotest.space/blog/artist-profile-smokestacks/birds/",
+                    "title": {
+                        "rendered": "birds"
+                    },
+                    "author": 1,
+                    "acf": [],
+                    "caption": {
+                        "rendered": ""
+                    },
+                    "alt_text": "",
+                    "media_type": "image",
+                    "mime_type": "image/png",
+                    "media_details": {
+                        "width": 769,
+                        "height": 450,
+                        "file": "2023/12/birds.png",
+                        "filesize": 69652,
+                        "sizes": {
+                            "medium": {
+                                "file": "birds-300x176.png",
+                                "width": 300,
+                                "height": 176,
+                                "filesize": 40210,
+                                "mime_type": "image/png",
+                                "source_url": "/media/blog1.png"
+                            },
+                            "thumbnail": {
+                                "file": "birds-150x150.png",
+                                "width": 150,
+                                "height": 150,
+                                "filesize": 18464,
+                                "mime_type": "image/png",
+                                "source_url": "/media/blog1.png"
+                            },
+                            "widget-thumbnail": {
+                                "file": "birds-75x75.png",
+                                "width": 75,
+                                "height": 75,
+                                "filesize": 5913,
+                                "mime_type": "image/png",
+                                "source_url": "/media/blog1.png"
+                            },
+                            "full": {
+                                "file": "birds.png",
+                                "width": 769,
+                                "height": 450,
+                                "mime_type": "image/png",
+                                "source_url": "/media/blog1.png"
+                            }
+                        },
+                        "image_meta": {
+                            "aperture": "0",
+                            "credit": "",
+                            "camera": "",
+                            "caption": "",
+                            "created_timestamp": "0",
+                            "copyright": "",
+                            "focal_length": "0",
+                            "iso": "0",
+                            "shutter_speed": "0",
+                            "title": "",
+                            "orientation": "0",
+                            "keywords": []
+                        }
+                    },
+                    "source_url": "/media/blog1.png",
+                    "_links": {
+                        "self": [
+                            {
+                                "href": "https://arvotest.space/wp-json/wp/v2/media/133"
+                            }
+                        ],
+                        "collection": [
+                            {
+                                "href": "https://arvotest.space/wp-json/wp/v2/media"
+                            }
+                        ],
+                        "about": [
+                            {
+                                "href": "https://arvotest.space/wp-json/wp/v2/types/attachment"
+                            }
+                        ],
+                        "author": [
+                            {
+                                "embeddable": true,
+                                "href": "https://arvotest.space/wp-json/wp/v2/users/1"
+                            }
+                        ],
+                        "replies": [
+                            {
+                                "embeddable": true,
+                                "href": "https://arvotest.space/wp-json/wp/v2/comments?post=133"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 130,
+        "date": "2023-12-15T12:00:22",
+        "date_gmt": "2023-12-15T12:00:22",
+        "guid": {
+            "rendered": "http://blockpile.local/?post_type=blog&#038;p=130"
+        },
+        "modified": "2023-12-15T12:19:42",
+        "modified_gmt": "2023-12-15T12:19:42",
+        "slug": "check-out-the-latest-launch",
+        "status": "publish",
+        "type": "blog",
+        "link": "https://arvotest.space/blog/check-out-the-latest-launch/",
+        "title": {
+            "rendered": "Check out the latest launch"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "featured_media": 25,
+        "template": "",
+        "acf": {
+            "topsectionheading": "Launching a photography collection",
+            "topsectiondescription": "A collection of 4 NFTs by Daniel Koeth with different distribution mechanisms and rarities. Completed in 2022.",
+            "topsectionlink1": "https://www.google.com/",
+            "topsectionlink2": "https://opensea.io/",
+            "topsectionlink3": "https://github.com/",
+            "topsectiontechheading": "Scope of work",
+            "toptech1": "Burn/Own to mint contracts",
+            "toptech2": "Truffle",
+            "toptech3": "React",
+            "toptech4": "Web3.js",
+            "topimage": "/media/blog2.jpg",
+            "middleimagecover": "/media/blog2.jpg",
+            "middletexttitle": "4 unique items, 1 video, editions all rolled into one contract",
+            "middletextdescription": "As these things good, Daniel was referred to use on Twitter and is a talented SuperRare artist and photographer that needed assistance with how best to deliver the launch to his collector base.  Combining different distribution mechanisms and rarities posed a challenge that we willingly accepted.  One of the main utilities was a lifetime allowlist for the token owner which is an interesting dynamic.",
+            "middletextimage": "/media/blog2.jpg",
+            "middlequotetext": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.” Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit",
+            "middletestimonialtext": "f-1 collective"
+        },
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Check out the latest launch - blockpile</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://arvotest.space/blog/check-out-the-latest-launch/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Check out the latest launch - blockpile\" />\n<meta property=\"og:url\" content=\"https://arvotest.space/blog/check-out-the-latest-launch/\" />\n<meta property=\"og:site_name\" content=\"blockpile\" />\n<meta property=\"article:modified_time\" content=\"2023-12-15T12:19:42+00:00\" />\n<meta property=\"og:image\" content=\"/media/blog2.jpg\" />\n\t<meta property=\"og:image:width\" content=\"769\" />\n\t<meta property=\"og:image:height\" content=\"450\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://arvotest.space/blog/check-out-the-latest-launch/\",\"url\":\"https://arvotest.space/blog/check-out-the-latest-launch/\",\"name\":\"Check out the latest launch - blockpile\",\"isPartOf\":{\"@id\":\"https://arvotest.space/#website\"},\"datePublished\":\"2023-12-15T12:00:22+00:00\",\"dateModified\":\"2023-12-15T12:19:42+00:00\",\"breadcrumb\":{\"@id\":\"https://arvotest.space/blog/check-out-the-latest-launch/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://arvotest.space/blog/check-out-the-latest-launch/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://arvotest.space/blog/check-out-the-latest-launch/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://arvotest.space/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Check out the latest launch\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://arvotest.space/#website\",\"url\":\"https://arvotest.space/\",\"name\":\"blockpile\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://arvotest.space/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head_json": {
+            "title": "Check out the latest launch - blockpile",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "https://arvotest.space/blog/check-out-the-latest-launch/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "Check out the latest launch - blockpile",
+            "og_url": "https://arvotest.space/blog/check-out-the-latest-launch/",
+            "og_site_name": "blockpile",
+            "article_modified_time": "2023-12-15T12:19:42+00:00",
+            "og_image": [
+                {
+                    "width": 769,
+                    "height": 450,
+                    "url": "/media/blog2.jpg",
+                    "type": "image/jpeg"
+                }
+            ],
+            "twitter_card": "summary_large_image",
+            "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://arvotest.space/blog/check-out-the-latest-launch/",
+                        "url": "https://arvotest.space/blog/check-out-the-latest-launch/",
+                        "name": "Check out the latest launch - blockpile",
+                        "isPartOf": {
+                            "@id": "https://arvotest.space/#website"
+                        },
+                        "datePublished": "2023-12-15T12:00:22+00:00",
+                        "dateModified": "2023-12-15T12:19:42+00:00",
+                        "breadcrumb": {
+                            "@id": "https://arvotest.space/blog/check-out-the-latest-launch/#breadcrumb"
+                        },
+                        "inLanguage": "en-US",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://arvotest.space/blog/check-out-the-latest-launch/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://arvotest.space/blog/check-out-the-latest-launch/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://arvotest.space/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Check out the latest launch"
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://arvotest.space/#website",
+                        "url": "https://arvotest.space/",
+                        "name": "blockpile",
+                        "description": "",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "https://arvotest.space/?s={search_term_string}"
+                                },
+                                "query-input": "required name=search_term_string"
+                            }
+                        ],
+                        "inLanguage": "en-US"
+                    }
+                ]
+            }
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https://arvotest.space/wp-json/wp/v2/blog/130"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://arvotest.space/wp-json/wp/v2/blog"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://arvotest.space/wp-json/wp/v2/types/blog"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://arvotest.space/wp-json/wp/v2/media/25"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://arvotest.space/wp-json/wp/v2/media?parent=130"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        },
+        "_embedded": {
+            "wp:featuredmedia": [
+                {
+                    "id": 25,
+                    "date": "2023-11-24T13:37:55",
+                    "slug": "blog2",
+                    "type": "attachment",
+                    "link": "https://arvotest.space/blackhole/blog2/",
+                    "title": {
+                        "rendered": "blog2"
+                    },
+                    "author": 1,
+                    "acf": [],
+                    "caption": {
+                        "rendered": ""
+                    },
+                    "alt_text": "",
+                    "media_type": "image",
+                    "mime_type": "image/jpeg",
+                    "media_details": {
+                        "width": 769,
+                        "height": 450,
+                        "file": "2023/11/blog2.jpg",
+                        "filesize": 32246,
+                        "sizes": {
+                            "medium": {
+                                "file": "blog2-300x176.jpg",
+                                "width": 300,
+                                "height": 176,
+                                "filesize": 7297,
+                                "mime_type": "image/jpeg",
+                                "source_url": "/media/blog2.jpg"
+                            },
+                            "thumbnail": {
+                                "file": "blog2-150x150.jpg",
+                                "width": 150,
+                                "height": 150,
+                                "filesize": 4140,
+                                "mime_type": "image/jpeg",
+                                "source_url": "/media/blog2.jpg"
+                            },
+                            "full": {
+                                "file": "blog2.jpg",
+                                "width": 769,
+                                "height": 450,
+                                "mime_type": "image/jpeg",
+                                "source_url": "/media/blog2.jpg"
+                            }
+                        },
+                        "image_meta": {
+                            "aperture": "0",
+                            "credit": "",
+                            "camera": "",
+                            "caption": "",
+                            "created_timestamp": "0",
+                            "copyright": "",
+                            "focal_length": "0",
+                            "iso": "0",
+                            "shutter_speed": "0",
+                            "title": "",
+                            "orientation": "0",
+                            "keywords": []
+                        }
+                    },
+                    "source_url": "/media/blog2.jpg",
+                    "_links": {
+                        "self": [
+                            {
+                                "href": "https://arvotest.space/wp-json/wp/v2/media/25"
+                            }
+                        ],
+                        "collection": [
+                            {
+                                "href": "https://arvotest.space/wp-json/wp/v2/media"
+                            }
+                        ],
+                        "about": [
+                            {
+                                "href": "https://arvotest.space/wp-json/wp/v2/types/attachment"
+                            }
+                        ],
+                        "author": [
+                            {
+                                "embeddable": true,
+                                "href": "https://arvotest.space/wp-json/wp/v2/users/1"
+                            }
+                        ],
+                        "replies": [
+                            {
+                                "embeddable": true,
+                                "href": "https://arvotest.space/wp-json/wp/v2/comments?post=25"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 129,
+        "date": "2023-12-15T11:59:56",
+        "date_gmt": "2023-12-15T11:59:56",
+        "guid": {
+            "rendered": "http://blockpile.local/?post_type=blog&#038;p=129"
+        },
+        "modified": "2023-12-15T12:23:12",
+        "modified_gmt": "2023-12-15T12:23:12",
+        "slug": "smart-contract-101",
+        "status": "publish",
+        "type": "blog",
+        "link": "https://arvotest.space/blog/smart-contract-101/",
+        "title": {
+            "rendered": "Smart contract 101"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "featured_media": 132,
+        "template": "",
+        "acf": {
+            "topsectionheading": "Launching a photography collection",
+            "topsectiondescription": "A collection of 4 NFTs by Daniel Koeth with different distribution mechanisms and rarities. Completed in 2022.",
+            "topsectionlink1": "https://www.google.com/",
+            "topsectionlink2": "https://opensea.io/",
+            "topsectionlink3": "https://github.com/",
+            "topsectiontechheading": "Scope of work",
+            "toptech1": "Burn/Own to mint contracts",
+            "toptech2": "Truffle",
+            "toptech3": "React",
+            "toptech4": "Web3.js",
+            "topimage": "/media/blog3.jpg",
+            "middleimagecover": "/media/blog3.jpg",
+            "middletexttitle": "4 unique items, 1 video, editions all rolled into one contract",
+            "middletextdescription": "As these things good, Daniel was referred to use on Twitter and is a talented SuperRare artist and photographer that needed assistance with how best to deliver the launch to his collector base.  Combining different distribution mechanisms and rarities posed a challenge that we willingly accepted.  One of the main utilities was a lifetime allowlist for the token owner which is an interesting dynamic.",
+            "middletextimage": "/media/blog3.jpg",
+            "middlequotetext": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.” Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit",
+            "middletestimonialtext": "f-1 collective"
+        },
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Smart contract 101 - blockpile</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://arvotest.space/blog/smart-contract-101/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Smart contract 101 - blockpile\" />\n<meta property=\"og:url\" content=\"https://arvotest.space/blog/smart-contract-101/\" />\n<meta property=\"og:site_name\" content=\"blockpile\" />\n<meta property=\"article:modified_time\" content=\"2023-12-15T12:23:12+00:00\" />\n<meta property=\"og:image\" content=\"media/blog3.jpg\" />\n\t<meta property=\"og:image:width\" content=\"769\" />\n\t<meta property=\"og:image:height\" content=\"450\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://arvotest.space/blog/smart-contract-101/\",\"url\":\"https://arvotest.space/blog/smart-contract-101/\",\"name\":\"Smart contract 101 - blockpile\",\"isPartOf\":{\"@id\":\"https://arvotest.space/#website\"},\"datePublished\":\"2023-12-15T11:59:56+00:00\",\"dateModified\":\"2023-12-15T12:23:12+00:00\",\"breadcrumb\":{\"@id\":\"https://arvotest.space/blog/smart-contract-101/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://arvotest.space/blog/smart-contract-101/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://arvotest.space/blog/smart-contract-101/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://arvotest.space/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Smart contract 101\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://arvotest.space/#website\",\"url\":\"https://arvotest.space/\",\"name\":\"blockpile\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://arvotest.space/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head_json": {
+            "title": "Smart contract 101 - blockpile",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "https://arvotest.space/blog/smart-contract-101/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "Smart contract 101 - blockpile",
+            "og_url": "https://arvotest.space/blog/smart-contract-101/",
+            "og_site_name": "blockpile",
+            "article_modified_time": "2023-12-15T12:23:12+00:00",
+            "og_image": [
+                {
+                    "width": 769,
+                    "height": 450,
+                    "url": "/media/blog3.jpg",
+                    "type": "image/jpeg"
+                }
+            ],
+            "twitter_card": "summary_large_image",
+            "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://arvotest.space/blog/smart-contract-101/",
+                        "url": "https://arvotest.space/blog/smart-contract-101/",
+                        "name": "Smart contract 101 - blockpile",
+                        "isPartOf": {
+                            "@id": "https://arvotest.space/#website"
+                        },
+                        "datePublished": "2023-12-15T11:59:56+00:00",
+                        "dateModified": "2023-12-15T12:23:12+00:00",
+                        "breadcrumb": {
+                            "@id": "https://arvotest.space/blog/smart-contract-101/#breadcrumb"
+                        },
+                        "inLanguage": "en-US",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://arvotest.space/blog/smart-contract-101/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://arvotest.space/blog/smart-contract-101/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://arvotest.space/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Smart contract 101"
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://arvotest.space/#website",
+                        "url": "https://arvotest.space/",
+                        "name": "blockpile",
+                        "description": "",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "https://arvotest.space/?s={search_term_string}"
+                                },
+                                "query-input": "required name=search_term_string"
+                            }
+                        ],
+                        "inLanguage": "en-US"
+                    }
+                ]
+            }
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https://arvotest.space/wp-json/wp/v2/blog/129"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://arvotest.space/wp-json/wp/v2/blog"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://arvotest.space/wp-json/wp/v2/types/blog"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://arvotest.space/wp-json/wp/v2/media/132"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://arvotest.space/wp-json/wp/v2/media?parent=129"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        },
+        "_embedded": {
+            "wp:featuredmedia": [
+                {
+                    "id": 132,
+                    "date": "2023-12-15T12:01:40",
+                    "slug": "blog1",
+                    "type": "attachment",
+                    "link": "https://arvotest.space/blog/smart-contract-101/blog1/",
+                    "title": {
+                        "rendered": "blog1"
+                    },
+                    "author": 1,
+                    "acf": [],
+                    "caption": {
+                        "rendered": ""
+                    },
+                    "alt_text": "",
+                    "media_type": "image",
+                    "mime_type": "image/jpeg",
+                    "media_details": {
+                        "width": 769,
+                        "height": 450,
+                        "file": "2023/12/blog1.jpg",
+                        "filesize": 57117,
+                        "sizes": {
+                            "medium": {
+                                "file": "blog1-300x176.jpg",
+                                "width": 300,
+                                "height": 176,
+                                "filesize": 10467,
+                                "mime_type": "image/jpeg",
+                                "source_url": "/media/blog3.jpg"
+                            },
+                            "thumbnail": {
+                                "file": "blog1-150x150.jpg",
+                                "width": 150,
+                                "height": 150,
+                                "filesize": 5583,
+                                "mime_type": "image/jpeg",
+                                "source_url": "/media/blog3.jpg"
+                            },
+                            "widget-thumbnail": {
+                                "file": "blog1-75x75.jpg",
+                                "width": 75,
+                                "height": 75,
+                                "filesize": 1808,
+                                "mime_type": "image/jpeg",
+                                "source_url": "/media/blog3.jpg"
+                            },
+                            "full": {
+                                "file": "blog1.jpg",
+                                "width": 769,
+                                "height": 450,
+                                "mime_type": "image/jpeg",
+                                "source_url": "/media/blog3.jpg"
+                            }
+                        },
+                        "image_meta": {
+                            "aperture": "0",
+                            "credit": "",
+                            "camera": "",
+                            "caption": "",
+                            "created_timestamp": "0",
+                            "copyright": "",
+                            "focal_length": "0",
+                            "iso": "0",
+                            "shutter_speed": "0",
+                            "title": "",
+                            "orientation": "0",
+                            "keywords": []
+                        }
+                    },
+                    "source_url": "/media/blog3.jpg",
+                    "_links": {
+                        "self": [
+                            {
+                                "href": "https://arvotest.space/wp-json/wp/v2/media/132"
+                            }
+                        ],
+                        "collection": [
+                            {
+                                "href": "https://arvotest.space/wp-json/wp/v2/media"
+                            }
+                        ],
+                        "about": [
+                            {
+                                "href": "https://arvotest.space/wp-json/wp/v2/types/attachment"
+                            }
+                        ],
+                        "author": [
+                            {
+                                "embeddable": true,
+                                "href": "https://arvotest.space/wp-json/wp/v2/users/1"
+                            }
+                        ],
+                        "replies": [
+                            {
+                                "embeddable": true,
+                                "href": "https://arvotest.space/wp-json/wp/v2/comments?post=132"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+]
