@@ -4,14 +4,14 @@
         "date": "2023-12-29T11:49:28",
         "date_gmt": "2023-12-29T11:49:28",
         "guid": {
-            "rendered": "https://arvotest.space/?page_id=184"
+            "rendered": "http://localhost:3000/?page_id=184"
         },
         "modified": "2023-12-29T11:49:30",
         "modified_gmt": "2023-12-29T11:49:30",
         "slug": "blogs",
         "status": "publish",
         "type": "page",
-        "link": "https://arvotest.space/blogs/",
+        "link": "http://localhost:3000/blogs/",
         "title": {
             "rendered": "Blogs"
         },
@@ -34,7 +34,7 @@
             "footnotes": ""
         },
         "acf": [],
-        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Blogs - blockpile</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://arvotest.space/blogs/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Blogs - blockpile\" />\n<meta property=\"og:url\" content=\"https://arvotest.space/blogs/\" />\n<meta property=\"og:site_name\" content=\"blockpile\" />\n<meta property=\"article:modified_time\" content=\"2023-12-29T11:49:30+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://arvotest.space/blogs/\",\"url\":\"https://arvotest.space/blogs/\",\"name\":\"Blogs - blockpile\",\"isPartOf\":{\"@id\":\"https://arvotest.space/#website\"},\"datePublished\":\"2023-12-29T11:49:28+00:00\",\"dateModified\":\"2023-12-29T11:49:30+00:00\",\"breadcrumb\":{\"@id\":\"https://arvotest.space/blogs/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://arvotest.space/blogs/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://arvotest.space/blogs/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://arvotest.space/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blogs\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://arvotest.space/#website\",\"url\":\"https://arvotest.space/\",\"name\":\"blockpile\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://arvotest.space/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Blogs - blockpile</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"http://localhost:3000/blogs/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Blogs - blockpile\" />\n<meta property=\"og:url\" content=\"http://localhost:3000/blogs/\" />\n<meta property=\"og:site_name\" content=\"blockpile\" />\n<meta property=\"article:modified_time\" content=\"2023-12-29T11:49:30+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"http://localhost:3000/blogs/\",\"url\":\"http://localhost:3000/blogs/\",\"name\":\"Blogs - blockpile\",\"isPartOf\":{\"@id\":\"http://localhost:3000/#website\"},\"datePublished\":\"2023-12-29T11:49:28+00:00\",\"dateModified\":\"2023-12-29T11:49:30+00:00\",\"breadcrumb\":{\"@id\":\"http://localhost:3000/blogs/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"http://localhost:3000/blogs/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"http://localhost:3000/blogs/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"http://localhost:3000/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blogs\"}]},{\"@type\":\"WebSite\",\"@id\":\"http://localhost:3000/#website\",\"url\":\"http://localhost:3000/\",\"name\":\"blockpile\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"http://localhost:3000/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
         "yoast_head_json": {
             "title": "Blogs - blockpile",
             "robots": {
@@ -44,11 +44,11 @@
                 "max-image-preview": "max-image-preview:large",
                 "max-video-preview": "max-video-preview:-1"
             },
-            "canonical": "https://arvotest.space/blogs/",
+            "canonical": "http://localhost:3000/blogs/",
             "og_locale": "en_US",
             "og_type": "article",
             "og_title": "Blogs - blockpile",
-            "og_url": "https://arvotest.space/blogs/",
+            "og_url": "http://localhost:3000/blogs/",
             "og_site_name": "blockpile",
             "article_modified_time": "2023-12-29T11:49:30+00:00",
             "twitter_card": "summary_large_image",
@@ -57,36 +57,36 @@
                 "@graph": [
                     {
                         "@type": "WebPage",
-                        "@id": "https://arvotest.space/blogs/",
-                        "url": "https://arvotest.space/blogs/",
+                        "@id": "http://localhost:3000/blogs/",
+                        "url": "http://localhost:3000/blogs/",
                         "name": "Blogs - blockpile",
                         "isPartOf": {
-                            "@id": "https://arvotest.space/#website"
+                            "@id": "http://localhost:3000/#website"
                         },
                         "datePublished": "2023-12-29T11:49:28+00:00",
                         "dateModified": "2023-12-29T11:49:30+00:00",
                         "breadcrumb": {
-                            "@id": "https://arvotest.space/blogs/#breadcrumb"
+                            "@id": "http://localhost:3000/blogs/#breadcrumb"
                         },
                         "inLanguage": "en-US",
                         "potentialAction": [
                             {
                                 "@type": "ReadAction",
                                 "target": [
-                                    "https://arvotest.space/blogs/"
+                                    "http://localhost:3000/blogs/"
                                 ]
                             }
                         ]
                     },
                     {
                         "@type": "BreadcrumbList",
-                        "@id": "https://arvotest.space/blogs/#breadcrumb",
+                        "@id": "http://localhost:3000/blogs/#breadcrumb",
                         "itemListElement": [
                             {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "name": "Home",
-                                "item": "https://arvotest.space/"
+                                "item": "http://localhost:3000/"
                             },
                             {
                                 "@type": "ListItem",
@@ -97,8 +97,8 @@
                     },
                     {
                         "@type": "WebSite",
-                        "@id": "https://arvotest.space/#website",
-                        "url": "https://arvotest.space/",
+                        "@id": "http://localhost:3000/#website",
+                        "url": "http://localhost:3000/",
                         "name": "blockpile",
                         "description": "",
                         "potentialAction": [
@@ -106,7 +106,7 @@
                                 "@type": "SearchAction",
                                 "target": {
                                     "@type": "EntryPoint",
-                                    "urlTemplate": "https://arvotest.space/?s={search_term_string}"
+                                    "urlTemplate": "http://localhost:3000/?s={search_term_string}"
                                 },
                                 "query-input": "required name=search_term_string"
                             }
@@ -119,46 +119,46 @@
         "_links": {
             "self": [
                 {
-                    "href": "https://arvotest.space/wp-json/wp/v2/pages/184"
+                    "href": "http://localhost:3000/wp-json/wp/v2/pages/184"
                 }
             ],
             "collection": [
                 {
-                    "href": "https://arvotest.space/wp-json/wp/v2/pages"
+                    "href": "http://localhost:3000/wp-json/wp/v2/pages"
                 }
             ],
             "about": [
                 {
-                    "href": "https://arvotest.space/wp-json/wp/v2/types/page"
+                    "href": "http://localhost:3000/wp-json/wp/v2/types/page"
                 }
             ],
             "author": [
                 {
                     "embeddable": true,
-                    "href": "https://arvotest.space/wp-json/wp/v2/users/1"
+                    "href": "http://localhost:3000/wp-json/wp/v2/users/1"
                 }
             ],
             "replies": [
                 {
                     "embeddable": true,
-                    "href": "https://arvotest.space/wp-json/wp/v2/comments?post=184"
+                    "href": "http://localhost:3000/wp-json/wp/v2/comments?post=184"
                 }
             ],
             "version-history": [
                 {
                     "count": 1,
-                    "href": "https://arvotest.space/wp-json/wp/v2/pages/184/revisions"
+                    "href": "http://localhost:3000/wp-json/wp/v2/pages/184/revisions"
                 }
             ],
             "predecessor-version": [
                 {
                     "id": 185,
-                    "href": "https://arvotest.space/wp-json/wp/v2/pages/184/revisions/185"
+                    "href": "http://localhost:3000/wp-json/wp/v2/pages/184/revisions/185"
                 }
             ],
             "wp:attachment": [
                 {
-                    "href": "https://arvotest.space/wp-json/wp/v2/media?parent=184"
+                    "href": "http://localhost:3000/wp-json/wp/v2/media?parent=184"
                 }
             ],
             "curies": [

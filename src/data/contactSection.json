@@ -10,7 +10,7 @@
     "slug": "contact_section",
     "status": "publish",
     "type": "sections",
-    "link": "https://arvotest.space/sections/contact_section/",
+    "link": "http://localhost:3000/sections/contact_section/",
     "title": {
         "rendered": "contact_section"
     },
@@ -21,7 +21,7 @@
     "featured_media": 0,
     "template": "",
     "acf": [],
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>contact_section - blockpile</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://arvotest.space/sections/contact_section/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"contact_section - blockpile\" />\n<meta property=\"og:description\" content=\"Do you have a Web3 project in mind?Let’s discuss how we can help.\" />\n<meta property=\"og:url\" content=\"https://arvotest.space/sections/contact_section/\" />\n<meta property=\"og:site_name\" content=\"blockpile\" />\n<meta property=\"article:modified_time\" content=\"2023-12-22T11:48:54+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://arvotest.space/sections/contact_section/\",\"url\":\"https://arvotest.space/sections/contact_section/\",\"name\":\"contact_section - blockpile\",\"isPartOf\":{\"@id\":\"https://arvotest.space/#website\"},\"datePublished\":\"2023-11-27T13:13:35+00:00\",\"dateModified\":\"2023-12-22T11:48:54+00:00\",\"breadcrumb\":{\"@id\":\"https://arvotest.space/sections/contact_section/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://arvotest.space/sections/contact_section/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://arvotest.space/sections/contact_section/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://arvotest.space/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"contact_section\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://arvotest.space/#website\",\"url\":\"https://arvotest.space/\",\"name\":\"blockpile\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://arvotest.space/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>contact_section - blockpile</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"http://localhost:3000/sections/contact_section/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"contact_section - blockpile\" />\n<meta property=\"og:description\" content=\"Do you have a Web3 project in mind?Let’s discuss how we can help.\" />\n<meta property=\"og:url\" content=\"http://localhost:3000/sections/contact_section/\" />\n<meta property=\"og:site_name\" content=\"blockpile\" />\n<meta property=\"article:modified_time\" content=\"2023-12-22T11:48:54+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"http://localhost:3000/sections/contact_section/\",\"url\":\"http://localhost:3000/sections/contact_section/\",\"name\":\"contact_section - blockpile\",\"isPartOf\":{\"@id\":\"http://localhost:3000/#website\"},\"datePublished\":\"2023-11-27T13:13:35+00:00\",\"dateModified\":\"2023-12-22T11:48:54+00:00\",\"breadcrumb\":{\"@id\":\"http://localhost:3000/sections/contact_section/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"http://localhost:3000/sections/contact_section/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"http://localhost:3000/sections/contact_section/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"http://localhost:3000/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"contact_section\"}]},{\"@type\":\"WebSite\",\"@id\":\"http://localhost:3000/#website\",\"url\":\"http://localhost:3000/\",\"name\":\"blockpile\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"http://localhost:3000/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
     "yoast_head_json": {
         "title": "contact_section - blockpile",
         "robots": {
@@ -31,12 +31,12 @@
             "max-image-preview": "max-image-preview:large",
             "max-video-preview": "max-video-preview:-1"
         },
-        "canonical": "https://arvotest.space/sections/contact_section/",
+        "canonical": "http://localhost:3000/sections/contact_section/",
         "og_locale": "en_US",
         "og_type": "article",
         "og_title": "contact_section - blockpile",
         "og_description": "Do you have a Web3 project in mind?Let’s discuss how we can help.",
-        "og_url": "https://arvotest.space/sections/contact_section/",
+        "og_url": "http://localhost:3000/sections/contact_section/",
         "og_site_name": "blockpile",
         "article_modified_time": "2023-12-22T11:48:54+00:00",
         "twitter_card": "summary_large_image",
@@ -48,36 +48,36 @@
             "@graph": [
                 {
                     "@type": "WebPage",
-                    "@id": "https://arvotest.space/sections/contact_section/",
-                    "url": "https://arvotest.space/sections/contact_section/",
+                    "@id": "http://localhost:3000/sections/contact_section/",
+                    "url": "http://localhost:3000/sections/contact_section/",
                     "name": "contact_section - blockpile",
                     "isPartOf": {
-                        "@id": "https://arvotest.space/#website"
+                        "@id": "http://localhost:3000/#website"
                     },
                     "datePublished": "2023-11-27T13:13:35+00:00",
                     "dateModified": "2023-12-22T11:48:54+00:00",
                     "breadcrumb": {
-                        "@id": "https://arvotest.space/sections/contact_section/#breadcrumb"
+                        "@id": "http://localhost:3000/sections/contact_section/#breadcrumb"
                     },
                     "inLanguage": "en-US",
                     "potentialAction": [
                         {
                             "@type": "ReadAction",
                             "target": [
-                                "https://arvotest.space/sections/contact_section/"
+                                "http://localhost:3000/sections/contact_section/"
                             ]
                         }
                     ]
                 },
                 {
                     "@type": "BreadcrumbList",
-                    "@id": "https://arvotest.space/sections/contact_section/#breadcrumb",
+                    "@id": "http://localhost:3000/sections/contact_section/#breadcrumb",
                     "itemListElement": [
                         {
                             "@type": "ListItem",
                             "position": 1,
                             "name": "Home",
-                            "item": "https://arvotest.space/"
+                            "item": "http://localhost:3000/"
                         },
                         {
                             "@type": "ListItem",
@@ -88,8 +88,8 @@
                 },
                 {
                     "@type": "WebSite",
-                    "@id": "https://arvotest.space/#website",
-                    "url": "https://arvotest.space/",
+                    "@id": "http://localhost:3000/#website",
+                    "url": "http://localhost:3000/",
                     "name": "blockpile",
                     "description": "",
                     "potentialAction": [
@@ -97,7 +97,7 @@
                             "@type": "SearchAction",
                             "target": {
                                 "@type": "EntryPoint",
-                                "urlTemplate": "https://arvotest.space/?s={search_term_string}"
+                                "urlTemplate": "http://localhost:3000/?s={search_term_string}"
                             },
                             "query-input": "required name=search_term_string"
                         }
@@ -110,22 +110,22 @@
     "_links": {
         "self": [
             {
-                "href": "https://arvotest.space/wp-json/wp/v2/sections/58"
+                "href": "http://localhost:3000/wp-json/wp/v2/sections/58"
             }
         ],
         "collection": [
             {
-                "href": "https://arvotest.space/wp-json/wp/v2/sections"
+                "href": "http://localhost:3000/wp-json/wp/v2/sections"
             }
         ],
         "about": [
             {
-                "href": "https://arvotest.space/wp-json/wp/v2/types/sections"
+                "href": "http://localhost:3000/wp-json/wp/v2/types/sections"
             }
         ],
         "wp:attachment": [
             {
-                "href": "https://arvotest.space/wp-json/wp/v2/media?parent=58"
+                "href": "http://localhost:3000/wp-json/wp/v2/media?parent=58"
             }
         ],
         "curies": [

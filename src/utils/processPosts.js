@@ -18,4 +18,4 @@ export function processPosts(posts, categoryMap) {
     });
 
     return processedPosts;
-} 
+}

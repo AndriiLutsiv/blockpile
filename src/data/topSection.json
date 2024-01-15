@@ -10,7 +10,7 @@
     "slug": "top_heading",
     "status": "publish",
     "type": "sections",
-    "link": "https://arvotest.space/sections/top_heading/",
+    "link": "http://localhost:3000/sections/top_heading/",
     "title": {
         "rendered": "top_heading"
     },
@@ -21,7 +21,7 @@
     "featured_media": 0,
     "template": "",
     "acf": [],
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>top_heading - blockpile</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://arvotest.space/sections/top_heading/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"top_heading - blockpile\" />\n<meta property=\"og:description\" content=\"Browse a collection of our featured Web3 work\" />\n<meta property=\"og:url\" content=\"https://arvotest.space/sections/top_heading/\" />\n<meta property=\"og:site_name\" content=\"blockpile\" />\n<meta property=\"article:modified_time\" content=\"2023-12-22T11:47:39+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://arvotest.space/sections/top_heading/\",\"url\":\"https://arvotest.space/sections/top_heading/\",\"name\":\"top_heading - blockpile\",\"isPartOf\":{\"@id\":\"https://arvotest.space/#website\"},\"datePublished\":\"2023-11-27T16:27:15+00:00\",\"dateModified\":\"2023-12-22T11:47:39+00:00\",\"breadcrumb\":{\"@id\":\"https://arvotest.space/sections/top_heading/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://arvotest.space/sections/top_heading/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://arvotest.space/sections/top_heading/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://arvotest.space/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"top_heading\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://arvotest.space/#website\",\"url\":\"https://arvotest.space/\",\"name\":\"blockpile\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://arvotest.space/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>top_heading - blockpile</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"http://localhost:3000/sections/top_heading/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"top_heading - blockpile\" />\n<meta property=\"og:description\" content=\"Browse a collection of our featured Web3 work\" />\n<meta property=\"og:url\" content=\"http://localhost:3000/sections/top_heading/\" />\n<meta property=\"og:site_name\" content=\"blockpile\" />\n<meta property=\"article:modified_time\" content=\"2023-12-22T11:47:39+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"http://localhost:3000/sections/top_heading/\",\"url\":\"http://localhost:3000/sections/top_heading/\",\"name\":\"top_heading - blockpile\",\"isPartOf\":{\"@id\":\"http://localhost:3000/#website\"},\"datePublished\":\"2023-11-27T16:27:15+00:00\",\"dateModified\":\"2023-12-22T11:47:39+00:00\",\"breadcrumb\":{\"@id\":\"http://localhost:3000/sections/top_heading/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"http://localhost:3000/sections/top_heading/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"http://localhost:3000/sections/top_heading/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"http://localhost:3000/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"top_heading\"}]},{\"@type\":\"WebSite\",\"@id\":\"http://localhost:3000/#website\",\"url\":\"http://localhost:3000/\",\"name\":\"blockpile\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"http://localhost:3000/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
     "yoast_head_json": {
         "title": "top_heading - blockpile",
         "robots": {
@@ -31,12 +31,12 @@
             "max-image-preview": "max-image-preview:large",
             "max-video-preview": "max-video-preview:-1"
         },
-        "canonical": "https://arvotest.space/sections/top_heading/",
+        "canonical": "http://localhost:3000/sections/top_heading/",
         "og_locale": "en_US",
         "og_type": "article",
         "og_title": "top_heading - blockpile",
         "og_description": "Browse a collection of our featured Web3 work",
-        "og_url": "https://arvotest.space/sections/top_heading/",
+        "og_url": "http://localhost:3000/sections/top_heading/",
         "og_site_name": "blockpile",
         "article_modified_time": "2023-12-22T11:47:39+00:00",
         "twitter_card": "summary_large_image",
@@ -48,36 +48,36 @@
             "@graph": [
                 {
                     "@type": "WebPage",
-                    "@id": "https://arvotest.space/sections/top_heading/",
-                    "url": "https://arvotest.space/sections/top_heading/",
+                    "@id": "http://localhost:3000/sections/top_heading/",
+                    "url": "http://localhost:3000/sections/top_heading/",
                     "name": "top_heading - blockpile",
                     "isPartOf": {
-                        "@id": "https://arvotest.space/#website"
+                        "@id": "http://localhost:3000/#website"
                     },
                     "datePublished": "2023-11-27T16:27:15+00:00",
                     "dateModified": "2023-12-22T11:47:39+00:00",
                     "breadcrumb": {
-                        "@id": "https://arvotest.space/sections/top_heading/#breadcrumb"
+                        "@id": "http://localhost:3000/sections/top_heading/#breadcrumb"
                     },
                     "inLanguage": "en-US",
                     "potentialAction": [
                         {
                             "@type": "ReadAction",
                             "target": [
-                                "https://arvotest.space/sections/top_heading/"
+                                "http://localhost:3000/sections/top_heading/"
                             ]
                         }
                     ]
                 },
                 {
                     "@type": "BreadcrumbList",
-                    "@id": "https://arvotest.space/sections/top_heading/#breadcrumb",
+                    "@id": "http://localhost:3000/sections/top_heading/#breadcrumb",
                     "itemListElement": [
                         {
                             "@type": "ListItem",
                             "position": 1,
                             "name": "Home",
-                            "item": "https://arvotest.space/"
+                            "item": "http://localhost:3000/"
                         },
                         {
                             "@type": "ListItem",
@@ -88,8 +88,8 @@
                 },
                 {
                     "@type": "WebSite",
-                    "@id": "https://arvotest.space/#website",
-                    "url": "https://arvotest.space/",
+                    "@id": "http://localhost:3000/#website",
+                    "url": "http://localhost:3000/",
                     "name": "blockpile",
                     "description": "",
                     "potentialAction": [
@@ -97,7 +97,7 @@
                             "@type": "SearchAction",
                             "target": {
                                 "@type": "EntryPoint",
-                                "urlTemplate": "https://arvotest.space/?s={search_term_string}"
+                                "urlTemplate": "http://localhost:3000/?s={search_term_string}"
                             },
                             "query-input": "required name=search_term_string"
                         }
@@ -110,22 +110,22 @@
     "_links": {
         "self": [
             {
-                "href": "https://arvotest.space/wp-json/wp/v2/sections/74"
+                "href": "http://localhost:3000/wp-json/wp/v2/sections/74"
             }
         ],
         "collection": [
             {
-                "href": "https://arvotest.space/wp-json/wp/v2/sections"
+                "href": "http://localhost:3000/wp-json/wp/v2/sections"
             }
         ],
         "about": [
             {
-                "href": "https://arvotest.space/wp-json/wp/v2/types/sections"
+                "href": "http://localhost:3000/wp-json/wp/v2/types/sections"
             }
         ],
         "wp:attachment": [
             {
-                "href": "https://arvotest.space/wp-json/wp/v2/media?parent=74"
+                "href": "http://localhost:3000/wp-json/wp/v2/media?parent=74"
             }
         ],
         "curies": [
