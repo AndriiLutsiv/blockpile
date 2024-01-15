@@ -7,9 +7,9 @@ const wpRestHostname = wpRestUrl.hostname;
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  images: {
-    domains: [wpRestHostname],
-  },
+  // images: {
+  //   domains: [wpRestHostname],
+  // },
 }
 
 module.exports = nextConfig;
